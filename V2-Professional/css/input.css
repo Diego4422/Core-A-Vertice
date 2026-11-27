@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@plugin "@tailwindcss/forms" {
+  strategy: "class";
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-graphite: #111315;
+  --color-surface-dark: #1A1D21;
+  --color-ivory: #F5F4F0;
+  --color-white: #FFFFFF;
+  --color-titanium: #62666D;
+  --color-titanium-light: #A1A6B0;
+  --color-copper: #E67737;
+  --color-copper-hover: #D46526;
+  --color-copper-text: #B84E14;
+  --color-border-light: #E2E0D8;
+  --color-border-dark: #2C3038;
+  --color-error: #C9372C;
+  --color-error-dark: #F87171;
+  --color-success: #1F7A4C;
+  --color-success-dark: #4ADE80;
+  --font-display: "Space Grotesk", system-ui, sans-serif;
+  --font-sans: Inter, system-ui, sans-serif;
+  --spacing-gutter: clamp(1.25rem, 4.8vw, 4.5rem);
+  --spacing-section: clamp(3.5rem, 6.5vw, 6.25rem);
+}
+
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("../assets/fonts/space-grotesk-latin.woff2") format("woff2");
+  font-weight: 500 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Inter;
+  src: url("../assets/fonts/inter-latin.woff2") format("woff2");
+  font-weight: 400 600;
+  font-display: swap;
+}
+
+@layer base {
+  h1, h2, h3 {
+    @apply font-display font-bold tracking-[-0.045em];
+  }
+
+  h2 {
+    @apply text-[clamp(2.25rem,4.35vw,4rem)] leading-[1.02];
+  }
+
+  h3 {
+    @apply text-2xl leading-[1.14];
+  }
+
+  :focus-visible {
+    @apply outline-3 outline-offset-4 outline-copper-text dark:outline-copper;
+  }
+
+  [data-dark-surface] :focus-visible {
+    @apply outline-copper;
+  }
+}

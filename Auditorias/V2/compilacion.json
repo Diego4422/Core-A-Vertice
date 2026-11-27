@@ -1,0 +1,13 @@
+{
+  "node": "v26.13.1",
+  "npm": "12.2.3",
+  "instalacion": "npm ci --offline --no-fund --no-audit --cache (caché local existente)",
+  "instalacion_exitosa": true,
+  "compilaciones": 2,
+  "comando": "npm run build:css",
+  "tailwind": "4.3.5",
+  "css_bytes": 25052,
+  "css_sha256": "8a65bb60ca34abccb267ab9d2f73246a8169f43636325f70525c47f6c97c67ee",
+  "mismo_resultado": true,
+  "aviso_npm": "npm omitió el script opcional de compilación de @parcel/watcher; el binario precompilado permitió la compilación."
+}

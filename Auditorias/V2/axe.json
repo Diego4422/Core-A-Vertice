@@ -1,0 +1,38 @@
+[
+  {
+    "tema": "claro",
+    "ancho": 375,
+    "estado": "menú abierto",
+    "infracciones": [],
+    "pasadas": 30,
+    "revision_manual": [],
+    "version": "4.14.0"
+  },
+  {
+    "tema": "claro",
+    "ancho": 1440,
+    "estado": "formulario inválido",
+    "infracciones": [],
+    "pasadas": 30,
+    "revision_manual": [],
+    "version": "4.14.0"
+  },
+  {
+    "tema": "oscuro",
+    "ancho": 375,
+    "estado": "menú abierto",
+    "infracciones": [],
+    "pasadas": 30,
+    "revision_manual": [],
+    "version": "4.14.0"
+  },
+  {
+    "tema": "oscuro",
+    "ancho": 1440,
+    "estado": "formulario inválido",
+    "infracciones": [],
+    "pasadas": 30,
+    "revision_manual": [],
+    "version": "4.14.0"
+  }
+]

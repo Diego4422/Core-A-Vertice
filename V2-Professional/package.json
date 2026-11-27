@@ -1,0 +1,14 @@
+{
+  "name": "core-a-vertice-v2",
+  "version": "2.0.0",
+  "private": true,
+  "scripts": {
+    "build:css": "tailwindcss -i ./css/input.css -o ./css/styles.css --minify",
+    "dev:css": "tailwindcss -i ./css/input.css -o ./css/styles.css --watch"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "4.3.5",
+    "@tailwindcss/forms": "0.5.11",
+    "tailwindcss": "4.3.5"
+  }
+}
