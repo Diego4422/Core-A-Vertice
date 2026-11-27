@@ -15,7 +15,12 @@ if (header) {
     menu.addEventListener('click', () => setMenu(menu.getAttribute('aria-expanded') === 'false'));
 
     nav.addEventListener('click', (event) => {
-      if (event.target.closest('a')) setMenu(false);
+      const link = event.target.closest('a');
+      if (!link || menu.getAttribute('aria-expanded') !== 'true') return;
+
+      const destination = document.getElementById(link.hash.slice(1));
+      (destination || menu).focus({ preventScroll: true });
+      setMenu(false);
     });
 
     header.addEventListener('keydown', (event) => {
@@ -26,7 +31,8 @@ if (header) {
     });
 
     header.addEventListener('focusout', (event) => {
-      if (!header.contains(event.relatedTarget)) setMenu(false);
+      const next = event.relatedTarget;
+      if (next && (!(next instanceof Node) || !header.contains(next))) setMenu(false);
     });
   }
 }
@@ -35,22 +41,30 @@ const form = document.querySelector('.contact-form');
 
 if (form) {
   const fields = form.querySelector('fieldset');
+  const name = form.querySelector('#nombre');
   const message = form.querySelector('#mensaje');
   const status = form.querySelector('[role="status"]');
 
-  if (fields && message && status) {
+  if (fields && name && message && status) {
+    function validateText(field) {
+      const hint = field === name ? 'Escribe un nombre de ejemplo.' : 'Escribe un mensaje de ejemplo.';
+      field.setCustomValidity(field.value.trim() ? '' : hint);
+    }
+
+    for (const field of [name, message]) {
+      field.addEventListener('input', () => validateText(field));
+      field.addEventListener('invalid', () => validateText(field));
+    }
+
     form.addEventListener('input', () => {
-      message.setCustomValidity('');
       status.textContent = '';
     });
 
     form.addEventListener('submit', (event) => {
       event.preventDefault();
-      if (!message.value.trim()) {
-        message.setCustomValidity('Escribe un mensaje de ejemplo.');
-        message.reportValidity();
-        return;
-      }
+      validateText(name);
+      validateText(message);
+      if (!form.reportValidity()) return;
       form.reset();
       status.textContent = 'Demostración completada. No se envió ni se guardó ningún dato.';
     });

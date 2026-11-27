@@ -69,6 +69,8 @@
   ],
   "rutas_http": {
     "/": 200,
+    "/assets/fonts/inter-latin.woff2": 200,
+    "/assets/fonts/space-grotesk-latin.woff2": 200,
     "/assets/fonts/webfonts.css": 200,
     "/assets/img/editorial-craft.webp": 200,
     "/assets/img/favicon.svg": 200,
@@ -122,11 +124,41 @@
       900
     ]
   ],
+  "fuentes_http": {
+    "caras": [
+      [
+        "Space Grotesk",
+        "500 700",
+        "loaded"
+      ],
+      [
+        "Inter",
+        "400 600",
+        "loaded"
+      ]
+    ],
+    "bytes_identicos_al_commit_base": true,
+    "css_bytes_antes": 94423,
+    "css_bytes_despues": 358,
+    "sha256": {
+      "assets/fonts/space-grotesk-latin.woff2": "0640890476fc1198ab4de571fb658de443c4d85b66466ec09534a8737ab1ce9d",
+      "assets/fonts/inter-latin.woff2": "3100e775e8616cd2611beecfa23a4263d7037586789b43f035236a2e6fbd4c62"
+    }
+  },
+  "texto_al_200_por_ciento": {
+    "ancho": 320,
+    "estilo": "32px",
+    "fuera": [],
+    "viewport": 320
+  },
   "menu": [
     "Tab y foco visible",
     "apertura con Enter",
     "Escape y devolución de foco",
-    "navegación por ancla y cierre al seleccionar",
+    "navegación por ancla y foco en destino",
+    "focusout nulo y cambio de pestaña conservan estado",
+    "focusout hacia el contenido cierra",
+    "alternancia del botón",
     "enlace de salto"
   ],
   "formulario": {
@@ -136,13 +168,27 @@
       "correo inválido",
       "categoría obligatoria",
       "mensaje en blanco",
+      "mensajes en español y limpieza de validez",
       "validación correcta",
       "aviso accesible y campos reiniciados"
     ],
     "peticiones_al_intentar_enviar": []
   },
-  "apertura_file": true,
-  "avisos_y_errores_consola": [],
+  "avisos_y_errores_consola_http": [],
+  "apertura_file": {
+    "interfaz_y_menu_operativos": true,
+    "caras": [
+      [
+        "Space Grotesk",
+        "loaded"
+      ],
+      [
+        "Inter",
+        "loaded"
+      ]
+    ],
+    "avisos_y_errores_consola": []
+  },
   "sin_javascript": {
     "nav": "flex",
     "camposDesactivados": true,
@@ -169,5 +215,15 @@
     "assets/img/prod-dock-studio.webp": "04d8acf7302a4c1ca6b99bd687e4be47c3ce5e4b3cdade95b5cf5e9079e5b9d0",
     "assets/img/prod-halo-bar.webp": "f95ec318c3e2b38ead6b804eab84544d4f3158c4c0ff2732e74d75d4c0f8c798",
     "assets/img/prod-tactile-75.webp": "24d04c9a93798a6c438582d0d026b7da3b440f84ca66997ea3efd7f31a16ebd7"
+  },
+  "comparacion_visual": {
+    "375": {
+      "commit_base": "5e6594a293cbfa8205b0d5ecc076477f4e32a986",
+      "pixeles_diferentes": 0
+    },
+    "1440": {
+      "commit_base": "5e6594a293cbfa8205b0d5ecc076477f4e32a986",
+      "pixeles_diferentes": 0
+    }
   }
 }

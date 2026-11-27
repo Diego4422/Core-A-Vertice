@@ -31,6 +31,8 @@ body {
   line-height: 1.6;
 }
 
+main { overflow-wrap: anywhere; }
+
 [hidden] { display: none !important; }
 
 img {
