@@ -1,0 +1,173 @@
+{
+  "url": "http://127.0.0.1:8767/",
+  "navegador": "Chromium",
+  "version": "157.0.8103.78",
+  "responsive": [
+    {
+      "ancho_documento": 320,
+      "ancho_visible": 320,
+      "columnas": 1,
+      "fuera": [],
+      "viewport": 320
+    },
+    {
+      "ancho_documento": 375,
+      "ancho_visible": 375,
+      "columnas": 1,
+      "fuera": [],
+      "viewport": 375
+    },
+    {
+      "ancho_documento": 753,
+      "ancho_visible": 753,
+      "columnas": 2,
+      "fuera": [],
+      "viewport": 768
+    },
+    {
+      "ancho_documento": 1009,
+      "ancho_visible": 1009,
+      "columnas": 4,
+      "fuera": [],
+      "viewport": 1024
+    },
+    {
+      "ancho_documento": 1425,
+      "ancho_visible": 1425,
+      "columnas": 4,
+      "fuera": [],
+      "viewport": 1440
+    }
+  ],
+  "capturas": [
+    {
+      "archivo": "captura-375.png",
+      "ancho": 375,
+      "alto": 7066
+    },
+    {
+      "archivo": "captura-1440.png",
+      "ancho": 1440,
+      "alto": 4297
+    }
+  ],
+  "accesibilidad_axe": [
+    {
+      "viewport": 375,
+      "aprobadas": 28,
+      "infracciones": [],
+      "revision_manual": [],
+      "version": "4.14.0"
+    },
+    {
+      "viewport": 1440,
+      "aprobadas": 28,
+      "infracciones": [],
+      "revision_manual": [],
+      "version": "4.14.0"
+    }
+  ],
+  "rutas_http": {
+    "/": 200,
+    "/assets/fonts/webfonts.css": 200,
+    "/assets/img/editorial-craft.webp": 200,
+    "/assets/img/favicon.svg": 200,
+    "/assets/img/hero-workspace.webp": 200,
+    "/assets/img/og-vertice.jpg": 200,
+    "/assets/img/prod-aura-anc.webp": 200,
+    "/assets/img/prod-dock-studio.webp": 200,
+    "/assets/img/prod-halo-bar.webp": 200,
+    "/assets/img/prod-tactile-75.webp": 200,
+    "/css/styles.css": 200,
+    "/index.html": 200,
+    "/js/main.js": 200
+  },
+  "anclas_verificadas": [
+    "#contenido",
+    "#inicio",
+    "#destacados",
+    "#colecciones",
+    "#marca",
+    "#contacto"
+  ],
+  "imagenes_decodificadas": [
+    [
+      "assets/img/hero-workspace.webp",
+      1200,
+      900
+    ],
+    [
+      "assets/img/prod-aura-anc.webp",
+      800,
+      800
+    ],
+    [
+      "assets/img/prod-tactile-75.webp",
+      800,
+      800
+    ],
+    [
+      "assets/img/prod-dock-studio.webp",
+      800,
+      800
+    ],
+    [
+      "assets/img/prod-halo-bar.webp",
+      800,
+      800
+    ],
+    [
+      "assets/img/editorial-craft.webp",
+      1200,
+      900
+    ]
+  ],
+  "menu": [
+    "Tab y foco visible",
+    "apertura con Enter",
+    "Escape y devolución de foco",
+    "navegación por ancla y cierre al seleccionar",
+    "enlace de salto"
+  ],
+  "formulario": {
+    "verificado": [
+      "vacío",
+      "nombre en blanco",
+      "correo inválido",
+      "categoría obligatoria",
+      "mensaje en blanco",
+      "validación correcta",
+      "aviso accesible y campos reiniciados"
+    ],
+    "peticiones_al_intentar_enviar": []
+  },
+  "apertura_file": true,
+  "avisos_y_errores_consola": [],
+  "sin_javascript": {
+    "nav": "flex",
+    "camposDesactivados": true,
+    "menuOculto": true,
+    "productos": 4,
+    "ancho": 320
+  },
+  "contrastes": {
+    "texto cobre sobre marfil": 4.61,
+    "texto cobre sobre blanco": 5.08,
+    "botón primario": 6.26,
+    "botón primario hover": 5.04,
+    "texto secundario sobre grafito": 7.62,
+    "texto secundario sobre marfil": 5.24,
+    "borde de campo": 5.77,
+    "borde de botón secundario": 3.23,
+    "confirmación de formulario": 5.32
+  },
+  "imagenes_del_paquete_sha256": {
+    "assets/img/editorial-craft.webp": "ec7cc3588a877ef285406041d94908c6f00f7ea6b78e43b11b88e4d2d535f4b5",
+    "assets/img/hero-workspace.webp": "d3945d07e5335f2221a4be43673a9f7979156dfe7cf7ca80efdd5a28850ed2a9",
+    "assets/img/og-vertice.jpg": "263f8eebca8fcc5dc11c7f8768ad9917af6ae2344a2342cb13f0685032cc8b0a",
+    "assets/img/prod-aura-anc.webp": "cd40d97effc5e04157e582dec46ef8a96ef69ebdb8592db80ca30de8d4d304d5",
+    "assets/img/prod-dock-studio.webp": "04d8acf7302a4c1ca6b99bd687e4be47c3ce5e4b3cdade95b5cf5e9079e5b9d0",
+    "assets/img/prod-halo-bar.webp": "f95ec318c3e2b38ead6b804eab84544d4f3158c4c0ff2732e74d75d4c0f8c798",
+    "assets/img/prod-tactile-75.webp": "24d04c9a93798a6c438582d0d026b7da3b440f84ca66997ea3efd7f31a16ebd7"
+  }
+}
