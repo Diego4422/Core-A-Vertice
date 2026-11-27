@@ -317,11 +317,20 @@ def resilience(b, report):
     report['almacenamiento']={'corrupto_recuperado':True,'ids_y_cantidades_invalidos_descartados':True,
         'precios_revinculados':True,'tema_recarga_e_independencia':True}
 
+    loading_hook=b.cdp('Page.addScriptToEvaluateOnNewDocument',{'source':"""
+      new MutationObserver(() => {
+        const grid=document.querySelector('[data-product-grid][aria-busy=true]');
+        const status=document.querySelector('[data-catalog-status]');
+        if (grid && status?.textContent.includes('Cargando')) {
+          window.__loadingCards=grid.querySelectorAll('article').length;
+        }
+      }).observe(document,{subtree:true,attributes:true,childList:true,characterData:true});
+    """})['identifier']
     b.go(url+'lento/')
-    assert number_of_cards(b)==12
-    assert 'Cargando' in text(b,'[data-catalog-status]')
     ready(b)
+    assert b.js('return window.__loadingCards')==12
     assert text(b,'[data-catalog-status]')==''
+    b.cdp('Page.removeScriptToEvaluateOnNewDocument',{'identifier':loading_hook})
     report['carga_lenta_con_respaldo']=True
     report['fallback']={}
     for scenario,status in [('http404',404),('http500',500),('json-roto',200),('esquema',200)]:
@@ -393,6 +402,111 @@ def inherited(b, report):
     report['herencia_V2']={'formulario_centrado':True,'cero_peticiones_formulario':True,'foco':True,
         'tema_y_menu_y_carrito':True}
 
+def independent_menu(b, report):
+    report['navegacion_sin_modulo'] = {}
+    for mode in themes:
+        viewport(b,375,812)
+        theme(b,mode)
+        for route in ('sin-modulo', 'sin-importacion', 'file'):
+            address = (root/'index.html').resolve().as_uri() if route == 'file' else url+route+'/'
+            b.go(address)
+            assert number_of_cards(b) == 12
+            assert b.js("""return ['[data-theme-toggle]', '[data-cart-trigger]'].every(s => {
+              const control = document.querySelector(s);
+              return control.disabled && getComputedStyle(control).visibility === 'hidden';
+            }) && document.querySelector('fieldset').disabled &&
+              document.querySelector('[data-catalog-controls]').hidden""")
+            focus(b,'[data-menu-toggle]')
+            b.key(ENTER)
+            b.key(TAB)
+            assert b.js("return document.activeElement.hash==='#catalogo'")
+            b.key(ESC)
+            assert b.js("""return document.activeElement.matches('[data-menu-toggle]') &&
+              document.activeElement.getAttribute('aria-expanded')==='false'""")
+            b.key(ENTER)
+            b.key(TAB)
+            b.key(ENTER)
+            assert active(b)=='catalogo'
+            report['navegacion_sin_modulo'][mode+'-'+route] = {
+                'productos':12, 'teclado_y_escape':True, 'foco_destino':True, 'controles_pendientes_inactivos':True}
+
+
+def reserved_cart(b, report):
+    records = []
+    go(b)
+    shape = """const header=document.querySelector('body > header');
+      const cart=header.querySelector('[data-cart-trigger]');
+      const badge=cart.querySelector('[data-cart-count]'), icon=cart.querySelector('svg');
+      const rect=cart.getBoundingClientRect();
+      return {alto:header.offsetHeight, ancho:rect.width, x:rect.x, y:rect.y,
+        desactivado:cart.disabled, visibilidad:getComputedStyle(cart).visibility,
+        unidades:badge.textContent, cabe:badge.getBoundingClientRect().right<=rect.right &&
+          icon.getBoundingClientRect().right<=badge.getBoundingClientRect().left};"""
+    source = '(() => { const read = () => {' + shape + """};
+      function sample() {
+        const cart = document.querySelector('[data-cart-trigger]');
+        if (cart && !cart.disabled) return;
+        if (cart && cart.getBoundingClientRect().width && document.fonts.status === 'loaded') {
+          window.__pendingCart = read();
+        }
+        requestAnimationFrame(sample);
+      }
+      requestAnimationFrame(sample);
+    })();"""
+    hook=b.cdp('Page.addScriptToEvaluateOnNewDocument',{'source':source})['identifier']
+    for width in (375,1440):
+        viewport(b,width)
+        setting(b,cart_key,json.dumps([{'id':product['id'],'quantity':99} for product in products]))
+        b.go(url+'lento/')
+        ready(b)
+        early=b.js('return window.__pendingCart')
+        late=b.js(shape)
+        assert early and early['desactivado'] and early['visibilidad']=='hidden' and early['unidades']=='0',early
+        assert not late['desactivado'] and late['visibilidad']=='visible' and late['unidades']=='1188' and late['cabe'],late
+        assert all(abs(early[k]-late[k])<1 for k in ('alto','ancho','x','y')),(early,late)
+        records.append({'ancho':width,'antes':early,'despues':late})
+    b.cdp('Page.removeScriptToEvaluateOnNewDocument',{'identifier':hook})
+    b.js("localStorage.removeItem(arguments[0])",cart_key)
+    report['espacio_reservado_carrito']=records
+
+
+def tall_header(b, report):
+    checks=[]
+    for mode in themes:
+        theme(b,mode)
+        for width,height in ((320,568),(320,780),(1024,800),(1280,800)):
+            viewport(b,width,height)
+            go(b)
+            b.js("document.documentElement.style.fontSize='200%'")
+            closed=b.js("return document.querySelector('body > header').offsetHeight")
+            position=b.js("return getComputedStyle(document.querySelector('body > header')).position")
+            exposed=[]
+            if width==320:
+                focus(b,'[data-menu-toggle]')
+                b.key(ENTER)
+                for _ in range(6):
+                    b.key(TAB)
+                    link=b.js("""const el=document.activeElement;
+                      const rect=el.getBoundingClientRect(), nav=el.closest('header nav')?.getBoundingClientRect();
+                      return {destino:el.hash, visible:!!nav && rect.top>=nav.top-1 &&
+                        rect.bottom<=Math.min(nav.bottom,innerHeight)+1};""")
+                    exposed.append(link)
+            else:
+                focus(b,'header nav a:last-child')
+            b.key(ENTER)
+            destination=b.js("""const target=document.getElementById('contacto');
+              const title=target.querySelector('h2').getBoundingClientRect();
+              const header=document.querySelector('body > header').getBoundingClientRect();
+              return {foco:document.activeElement.id, visible:title.top>=Math.max(0,header.bottom)-1 &&
+                title.bottom<=innerHeight+1};""")
+            row={'tema':mode,'ancho':width,'alto':height,'texto':200,'cabecera':closed,
+              'posicion':position,'opciones_menu':exposed,'destino_contacto':destination}
+            checks.append(row)
+            assert destination=={'foco':'contacto','visible':True} and all(item['visible'] for item in exposed),row
+            b.js("document.documentElement.style.fontSize=''")
+    report['cabecera_al_200_por_ciento']=checks
+
+
 def functional():
     report={'responsive':[],'zoom':[],'capturas':[],'contrastes':{},'url':url}
     with Browser() as b:
@@ -403,6 +517,9 @@ def functional():
         report['consola_flujo_normal']=severe
         inherited(b,report)
         cart_flow(b,report)
+        independent_menu(b,report)
+        reserved_cart(b,report)
+        tall_header(b,report)
         resilience(b,report)
     with Browser(js=False) as b:
         viewport(b,320,780)
@@ -411,11 +528,13 @@ def functional():
           productos:document.querySelectorAll('[data-product-grid] article').length,
           precios:document.querySelectorAll('[data-product-price]').length,
           controles:document.querySelector('[data-catalog-controls]').hidden,
-          carrito:document.querySelector('[data-cart-trigger]').hidden,
+          carrito:document.querySelector('[data-cart-trigger]').disabled &&
+            getComputedStyle(document.querySelector('[data-cart-trigger]')).visibility==='hidden',
+          menu:document.querySelector('[data-menu-toggle]').disabled,
           formulario:document.querySelector('fieldset').disabled,
           navegacion:getComputedStyle(document.querySelector('#navegacion')).display})""",'returnByValue':True})
         report['sin_js']=json.loads(raw['result']['value'])
-        assert report['sin_js']=={'productos':12,'precios':12,'controles':True,'carrito':True,'formulario':True,'navegacion':'flex'}
+        assert report['sin_js']=={'productos':12,'precios':12,'controles':True,'carrito':True,'menu':True,'formulario':True,'navegacion':'flex'}
     paths={'','index.html','assets/img/og-vertice.jpg','assets/img/favicon.svg','assets/fonts/space-grotesk-latin.woff2',
       'assets/fonts/inter-latin.woff2','css/styles.css','data/productos.json'}
     paths.update(x.relative_to(root).as_posix() for x in (root/'js').glob('*.js'))
@@ -468,4 +587,5 @@ def accessibility():
     (out/'axe.json').write_text(json.dumps(results,ensure_ascii=False,indent=2)+'\n')
     print('Axe completo,',len(results),'estados de catálogo y carrito')
 
-{'funcional':functional,'axe':accessibility}[sys.argv[1]]()
+if __name__ == '__main__':
+    {'funcional':functional,'axe':accessibility}[sys.argv[1]]()

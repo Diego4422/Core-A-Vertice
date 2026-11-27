@@ -288,6 +288,298 @@
     "controles_44px": true,
     "foco_al_eliminar_y_vaciar": true
   },
+  "navegacion_sin_modulo": {
+    "claro-sin-modulo": {
+      "productos": 12,
+      "teclado_y_escape": true,
+      "foco_destino": true,
+      "controles_pendientes_inactivos": true
+    },
+    "claro-sin-importacion": {
+      "productos": 12,
+      "teclado_y_escape": true,
+      "foco_destino": true,
+      "controles_pendientes_inactivos": true
+    },
+    "claro-file": {
+      "productos": 12,
+      "teclado_y_escape": true,
+      "foco_destino": true,
+      "controles_pendientes_inactivos": true
+    },
+    "oscuro-sin-modulo": {
+      "productos": 12,
+      "teclado_y_escape": true,
+      "foco_destino": true,
+      "controles_pendientes_inactivos": true
+    },
+    "oscuro-sin-importacion": {
+      "productos": 12,
+      "teclado_y_escape": true,
+      "foco_destino": true,
+      "controles_pendientes_inactivos": true
+    },
+    "oscuro-file": {
+      "productos": 12,
+      "teclado_y_escape": true,
+      "foco_destino": true,
+      "controles_pendientes_inactivos": true
+    }
+  },
+  "espacio_reservado_carrito": [
+    {
+      "ancho": 375,
+      "antes": {
+        "alto": 73,
+        "ancho": 61.90625,
+        "cabe": true,
+        "desactivado": true,
+        "unidades": "0",
+        "visibilidad": "hidden",
+        "x": 241.09375,
+        "y": 14
+      },
+      "despues": {
+        "alto": 73,
+        "ancho": 61.90625,
+        "cabe": true,
+        "desactivado": false,
+        "unidades": "1188",
+        "visibilidad": "visible",
+        "x": 241.09375,
+        "y": 14
+      }
+    },
+    {
+      "ancho": 1440,
+      "antes": {
+        "alto": 73,
+        "ancho": 61.90625,
+        "cabe": true,
+        "desactivado": true,
+        "unidades": "0",
+        "visibilidad": "hidden",
+        "x": 269.65625,
+        "y": 14
+      },
+      "despues": {
+        "alto": 73,
+        "ancho": 61.90625,
+        "cabe": true,
+        "desactivado": false,
+        "unidades": "1188",
+        "visibilidad": "visible",
+        "x": 269.65625,
+        "y": 14
+      }
+    }
+  ],
+  "cabecera_al_200_por_ciento": [
+    {
+      "tema": "claro",
+      "ancho": 320,
+      "alto": 568,
+      "texto": 200,
+      "cabecera": 313,
+      "posicion": "static",
+      "opciones_menu": [
+        {
+          "destino": "#catalogo",
+          "visible": true
+        },
+        {
+          "destino": "#colecciones",
+          "visible": true
+        },
+        {
+          "destino": "#ecosistema",
+          "visible": true
+        },
+        {
+          "destino": "#marca",
+          "visible": true
+        },
+        {
+          "destino": "#contacto",
+          "visible": true
+        },
+        {
+          "destino": "#contacto",
+          "visible": true
+        }
+      ],
+      "destino_contacto": {
+        "foco": "contacto",
+        "visible": true
+      }
+    },
+    {
+      "tema": "claro",
+      "ancho": 320,
+      "alto": 780,
+      "texto": 200,
+      "cabecera": 313,
+      "posicion": "sticky",
+      "opciones_menu": [
+        {
+          "destino": "#catalogo",
+          "visible": true
+        },
+        {
+          "destino": "#colecciones",
+          "visible": true
+        },
+        {
+          "destino": "#ecosistema",
+          "visible": true
+        },
+        {
+          "destino": "#marca",
+          "visible": true
+        },
+        {
+          "destino": "#contacto",
+          "visible": true
+        },
+        {
+          "destino": "#contacto",
+          "visible": true
+        }
+      ],
+      "destino_contacto": {
+        "foco": "contacto",
+        "visible": true
+      }
+    },
+    {
+      "tema": "claro",
+      "ancho": 1024,
+      "alto": 800,
+      "texto": 200,
+      "cabecera": 321,
+      "posicion": "sticky",
+      "opciones_menu": [],
+      "destino_contacto": {
+        "foco": "contacto",
+        "visible": true
+      }
+    },
+    {
+      "tema": "claro",
+      "ancho": 1280,
+      "alto": 800,
+      "texto": 200,
+      "cabecera": 225,
+      "posicion": "sticky",
+      "opciones_menu": [],
+      "destino_contacto": {
+        "foco": "contacto",
+        "visible": true
+      }
+    },
+    {
+      "tema": "oscuro",
+      "ancho": 320,
+      "alto": 568,
+      "texto": 200,
+      "cabecera": 313,
+      "posicion": "static",
+      "opciones_menu": [
+        {
+          "destino": "#catalogo",
+          "visible": true
+        },
+        {
+          "destino": "#colecciones",
+          "visible": true
+        },
+        {
+          "destino": "#ecosistema",
+          "visible": true
+        },
+        {
+          "destino": "#marca",
+          "visible": true
+        },
+        {
+          "destino": "#contacto",
+          "visible": true
+        },
+        {
+          "destino": "#contacto",
+          "visible": true
+        }
+      ],
+      "destino_contacto": {
+        "foco": "contacto",
+        "visible": true
+      }
+    },
+    {
+      "tema": "oscuro",
+      "ancho": 320,
+      "alto": 780,
+      "texto": 200,
+      "cabecera": 313,
+      "posicion": "sticky",
+      "opciones_menu": [
+        {
+          "destino": "#catalogo",
+          "visible": true
+        },
+        {
+          "destino": "#colecciones",
+          "visible": true
+        },
+        {
+          "destino": "#ecosistema",
+          "visible": true
+        },
+        {
+          "destino": "#marca",
+          "visible": true
+        },
+        {
+          "destino": "#contacto",
+          "visible": true
+        },
+        {
+          "destino": "#contacto",
+          "visible": true
+        }
+      ],
+      "destino_contacto": {
+        "foco": "contacto",
+        "visible": true
+      }
+    },
+    {
+      "tema": "oscuro",
+      "ancho": 1024,
+      "alto": 800,
+      "texto": 200,
+      "cabecera": 321,
+      "posicion": "sticky",
+      "opciones_menu": [],
+      "destino_contacto": {
+        "foco": "contacto",
+        "visible": true
+      }
+    },
+    {
+      "tema": "oscuro",
+      "ancho": 1280,
+      "alto": 800,
+      "texto": 200,
+      "cabecera": 225,
+      "posicion": "sticky",
+      "opciones_menu": [],
+      "destino_contacto": {
+        "foco": "contacto",
+        "visible": true
+      }
+    }
+  ],
   "almacenamiento": {
     "corrupto_recuperado": true,
     "ids_y_cantidades_invalidos_descartados": true,
@@ -319,6 +611,7 @@
     "precios": 12,
     "controles": true,
     "carrito": true,
+    "menu": true,
     "formulario": true,
     "navegacion": "flex"
   },

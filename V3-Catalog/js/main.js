@@ -26,55 +26,7 @@ if (themeToggle && window.matchMedia) {
   systemTheme.addEventListener('change', (event) => {
     if (followsSystem) applyTheme(event.matches);
   });
-  themeToggle.hidden = false;
-}
-
-const header = document.querySelector('[data-header]');
-
-if (header) {
-  const menu = header.querySelector('[data-menu-toggle]');
-  const nav = header.querySelector('#navegacion');
-
-  if (menu && nav) {
-    function updateHeaderHeight() {
-      if (header.dataset.menu !== 'open') {
-        root.style.setProperty('--header-height', header.offsetHeight + 'px');
-      }
-    }
-
-    function setMenu(open) {
-      menu.setAttribute('aria-expanded', String(open));
-      header.dataset.menu = open ? 'open' : 'closed';
-    }
-
-    setMenu(false);
-    menu.addEventListener('click', () => setMenu(menu.getAttribute('aria-expanded') === 'false'));
-
-    nav.addEventListener('click', (event) => {
-      const link = event.target.closest('a');
-      if (!link || menu.getAttribute('aria-expanded') !== 'true') return;
-
-      const destination = document.getElementById(link.hash.slice(1));
-      (destination || menu).focus({ preventScroll: true });
-      setMenu(false);
-      updateHeaderHeight();
-    });
-
-    header.addEventListener('keydown', (event) => {
-      if (event.key === 'Escape' && menu.getAttribute('aria-expanded') === 'true') {
-        setMenu(false);
-        if (menu.getClientRects().length) menu.focus();
-      }
-    });
-
-    header.addEventListener('focusout', (event) => {
-      const next = event.relatedTarget;
-      if (next && (!(next instanceof Node) || !header.contains(next))) setMenu(false);
-    });
-    menu.hidden = false;
-    updateHeaderHeight();
-    if (window.ResizeObserver) new ResizeObserver(updateHeaderHeight).observe(header);
-  }
+  themeToggle.disabled = false;
 }
 
 const form = document.querySelector('[data-demo-form]');
@@ -180,6 +132,7 @@ function initializeDrawer(productsById) {
     order.lines.forEach((line) => fragment.append(makeRow(line)));
     parts.items.replaceChildren(fragment);
     parts.badge.textContent = units;
+    parts.badge.toggleAttribute('data-wide', units.length > 1);
     parts.trigger.setAttribute('aria-label', `Abrir carrito, ${count}`);
     if (parts.drawerCount.textContent !== count) parts.drawerCount.textContent = count;
     parts.empty.hidden = order.units !== 0;
@@ -275,7 +228,7 @@ function initializeDrawer(productsById) {
 
   paintCart();
   parts.feedback.setAttribute('aria-hidden', 'true');
-  parts.trigger.hidden = false;
+  parts.trigger.disabled = false;
 
   return function add(id) {
     const next = changeQuantity(cart, id, 1, productsById);

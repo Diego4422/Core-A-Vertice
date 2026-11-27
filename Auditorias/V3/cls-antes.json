@@ -1,0 +1,918 @@
+{
+  "chromium": "157.0.8103.78",
+  "repeticiones": 48,
+  "demoras_ms": {
+    "modulo-lento": [
+      850,
+      0
+    ],
+    "carga-lenta": [
+      850,
+      1200
+    ]
+  },
+  "mediciones": [
+    {
+      "ancho": 320,
+      "tema": "claro",
+      "carga": "normal",
+      "cls": 0,
+      "desplazamientos": []
+    },
+    {
+      "ancho": 375,
+      "tema": "claro",
+      "carga": "normal",
+      "cls": 0,
+      "desplazamientos": []
+    },
+    {
+      "ancho": 412,
+      "tema": "claro",
+      "carga": "normal",
+      "cls": 0,
+      "desplazamientos": []
+    },
+    {
+      "ancho": 768,
+      "tema": "claro",
+      "carga": "normal",
+      "cls": 0.054444,
+      "desplazamientos": [
+        {
+          "nodes": [
+            "contenido"
+          ],
+          "score": 0.05314994633331807,
+          "time": 55.90000000037253
+        },
+        {
+          "nodes": [
+            "DIV"
+          ],
+          "score": 0.0012939598097587196,
+          "time": 67.90000000037253
+        }
+      ]
+    },
+    {
+      "ancho": 1023,
+      "tema": "claro",
+      "carga": "normal",
+      "cls": 0.044184,
+      "desplazamientos": [
+        {
+          "nodes": [
+            "contenido"
+          ],
+          "score": 0.043395243881270605,
+          "time": 71.79999999888241
+        },
+        {
+          "nodes": [
+            "DIV"
+          ],
+          "score": 0.0007892135528311837,
+          "time": 88.59999999962747
+        }
+      ]
+    },
+    {
+      "ancho": 1024,
+      "tema": "claro",
+      "carga": "normal",
+      "cls": 0.017314,
+      "desplazamientos": [
+        {
+          "nodes": [
+            "DIV"
+          ],
+          "score": 0.002826894216080029,
+          "time": 65.30000000074506
+        },
+        {
+          "nodes": [
+            "navegacion",
+            "DIV",
+            "DIV"
+          ],
+          "score": 0.014487530905102174,
+          "time": 78
+        }
+      ]
+    },
+    {
+      "ancho": 1280,
+      "tema": "claro",
+      "carga": "normal",
+      "cls": 0.002456,
+      "desplazamientos": [
+        {
+          "nodes": [
+            "navegacion"
+          ],
+          "score": 0.0024560794695354105,
+          "time": 71.5
+        }
+      ]
+    },
+    {
+      "ancho": 1440,
+      "tema": "claro",
+      "carga": "normal",
+      "cls": 0.002228,
+      "desplazamientos": [
+        {
+          "nodes": [
+            "navegacion"
+          ],
+          "score": 0.0022281983015991088,
+          "time": 75.40000000037253
+        }
+      ]
+    },
+    {
+      "ancho": 320,
+      "tema": "oscuro",
+      "carga": "normal",
+      "cls": 0,
+      "desplazamientos": []
+    },
+    {
+      "ancho": 375,
+      "tema": "oscuro",
+      "carga": "normal",
+      "cls": 0,
+      "desplazamientos": []
+    },
+    {
+      "ancho": 412,
+      "tema": "oscuro",
+      "carga": "normal",
+      "cls": 0,
+      "desplazamientos": []
+    },
+    {
+      "ancho": 768,
+      "tema": "oscuro",
+      "carga": "normal",
+      "cls": 0.054444,
+      "desplazamientos": [
+        {
+          "nodes": [
+            "contenido"
+          ],
+          "score": 0.05314994633331807,
+          "time": 59.59999999962747
+        },
+        {
+          "nodes": [
+            "DIV"
+          ],
+          "score": 0.0012939598097587196,
+          "time": 76.80000000074506
+        }
+      ]
+    },
+    {
+      "ancho": 1023,
+      "tema": "oscuro",
+      "carga": "normal",
+      "cls": 0.044184,
+      "desplazamientos": [
+        {
+          "nodes": [
+            "contenido"
+          ],
+          "score": 0.043395243881270605,
+          "time": 53.399999998509884
+        },
+        {
+          "nodes": [
+            "DIV"
+          ],
+          "score": 0.0007892135528311837,
+          "time": 67.69999999925494
+        }
+      ]
+    },
+    {
+      "ancho": 1024,
+      "tema": "oscuro",
+      "carga": "normal",
+      "cls": 0.017314,
+      "desplazamientos": [
+        {
+          "nodes": [
+            "DIV"
+          ],
+          "score": 0.002826894216080029,
+          "time": 56.40000000037253
+        },
+        {
+          "nodes": [
+            "navegacion",
+            "DIV",
+            "DIV"
+          ],
+          "score": 0.014487530905102174,
+          "time": 74
+        }
+      ]
+    },
+    {
+      "ancho": 1280,
+      "tema": "oscuro",
+      "carga": "normal",
+      "cls": 0.002456,
+      "desplazamientos": [
+        {
+          "nodes": [
+            "navegacion"
+          ],
+          "score": 0.0024560794695354105,
+          "time": 102.80000000074506
+        }
+      ]
+    },
+    {
+      "ancho": 1440,
+      "tema": "oscuro",
+      "carga": "normal",
+      "cls": 0.002228,
+      "desplazamientos": [
+        {
+          "nodes": [
+            "navegacion"
+          ],
+          "score": 0.0022281983015991088,
+          "time": 81.80000000074506
+        }
+      ]
+    },
+    {
+      "ancho": 320,
+      "tema": "claro",
+      "carga": "modulo-lento",
+      "cls": 0.321702,
+      "desplazamientos": [
+        {
+          "nodes": [
+            "contenido"
+          ],
+          "score": 0.10629989266663614,
+          "time": 902.3000000007451
+        },
+        {
+          "nodes": [
+            "contenido",
+            "DIV",
+            "A"
+          ],
+          "score": 0.2154022638924363,
+          "time": 916.2000000011176
+        }
+      ]
+    },
+    {
+      "ancho": 375,
+      "tema": "claro",
+      "carga": "modulo-lento",
+      "cls": 0.108388,
+      "desplazamientos": [
+        {
+          "nodes": [
+            "contenido"
+          ],
+          "score": 0.10629989266663614,
+          "time": 884.5
+        },
+        {
+          "nodes": [
+            "DIV"
+          ],
+          "score": 0.0020885625744652895,
+          "time": 895.1000000014901
+        }
+      ]
+    },
+    {
+      "ancho": 412,
+      "tema": "claro",
+      "carga": "modulo-lento",
+      "cls": 0.108201,
+      "desplazamientos": [
+        {
+          "nodes": [
+            "contenido"
+          ],
+          "score": 0.10629989266663614,
+          "time": 900.1999999992549
+        },
+        {
+          "nodes": [
+            "DIV"
+          ],
+          "score": 0.0019009974888943776,
+          "time": 911.1999999992549
+        }
+      ]
+    },
+    {
+      "ancho": 768,
+      "tema": "claro",
+      "carga": "modulo-lento",
+      "cls": 0.054444,
+      "desplazamientos": [
+        {
+          "nodes": [
+            "contenido"
+          ],
+          "score": 0.05314994633331807,
+          "time": 887.0999999996275
+        },
+        {
+          "nodes": [
+            "DIV"
+          ],
+          "score": 0.0012939598097587196,
+          "time": 897.5
+        }
+      ]
+    },
+    {
+      "ancho": 1023,
+      "tema": "claro",
+      "carga": "modulo-lento",
+      "cls": 0.044184,
+      "desplazamientos": [
+        {
+          "nodes": [
+            "contenido"
+          ],
+          "score": 0.043395243881270605,
+          "time": 883.5
+        },
+        {
+          "nodes": [
+            "DIV"
+          ],
+          "score": 0.0007892135528311837,
+          "time": 894
+        }
+      ]
+    },
+    {
+      "ancho": 1024,
+      "tema": "claro",
+      "carga": "modulo-lento",
+      "cls": 0.017314,
+      "desplazamientos": [
+        {
+          "nodes": [
+            "DIV"
+          ],
+          "score": 0.002826894216080029,
+          "time": 888.1000000014901
+        },
+        {
+          "nodes": [
+            "navegacion",
+            "DIV",
+            "DIV"
+          ],
+          "score": 0.014487530905102174,
+          "time": 899
+        }
+      ]
+    },
+    {
+      "ancho": 1280,
+      "tema": "claro",
+      "carga": "modulo-lento",
+      "cls": 0.002456,
+      "desplazamientos": [
+        {
+          "nodes": [
+            "navegacion"
+          ],
+          "score": 0.0024560794695354105,
+          "time": 901.7000000011176
+        }
+      ]
+    },
+    {
+      "ancho": 1440,
+      "tema": "claro",
+      "carga": "modulo-lento",
+      "cls": 0.002228,
+      "desplazamientos": [
+        {
+          "nodes": [
+            "navegacion"
+          ],
+          "score": 0.0022281983015991088,
+          "time": 895.0999999996275
+        }
+      ]
+    },
+    {
+      "ancho": 320,
+      "tema": "oscuro",
+      "carga": "modulo-lento",
+      "cls": 0.321702,
+      "desplazamientos": [
+        {
+          "nodes": [
+            "contenido"
+          ],
+          "score": 0.10629989266663614,
+          "time": 883.7999999988824
+        },
+        {
+          "nodes": [
+            "contenido",
+            "DIV",
+            "A"
+          ],
+          "score": 0.2154022638924363,
+          "time": 893.5999999996275
+        }
+      ]
+    },
+    {
+      "ancho": 375,
+      "tema": "oscuro",
+      "carga": "modulo-lento",
+      "cls": 0.108388,
+      "desplazamientos": [
+        {
+          "nodes": [
+            "contenido"
+          ],
+          "score": 0.10629989266663614,
+          "time": 897.5
+        },
+        {
+          "nodes": [
+            "DIV"
+          ],
+          "score": 0.0020885625744652895,
+          "time": 907.4000000003725
+        }
+      ]
+    },
+    {
+      "ancho": 412,
+      "tema": "oscuro",
+      "carga": "modulo-lento",
+      "cls": 0.108201,
+      "desplazamientos": [
+        {
+          "nodes": [
+            "contenido"
+          ],
+          "score": 0.10629989266663614,
+          "time": 884.3000000007451
+        },
+        {
+          "nodes": [
+            "DIV"
+          ],
+          "score": 0.0019009974888943776,
+          "time": 895.5
+        }
+      ]
+    },
+    {
+      "ancho": 768,
+      "tema": "oscuro",
+      "carga": "modulo-lento",
+      "cls": 0.054444,
+      "desplazamientos": [
+        {
+          "nodes": [
+            "contenido"
+          ],
+          "score": 0.05314994633331807,
+          "time": 883.5
+        },
+        {
+          "nodes": [
+            "DIV"
+          ],
+          "score": 0.0012939598097587196,
+          "time": 894.5
+        }
+      ]
+    },
+    {
+      "ancho": 1023,
+      "tema": "oscuro",
+      "carga": "modulo-lento",
+      "cls": 0.044184,
+      "desplazamientos": [
+        {
+          "nodes": [
+            "contenido"
+          ],
+          "score": 0.043395243881270605,
+          "time": 899.8000000007451
+        },
+        {
+          "nodes": [
+            "DIV"
+          ],
+          "score": 0.0007892135528311837,
+          "time": 910.3000000007451
+        }
+      ]
+    },
+    {
+      "ancho": 1024,
+      "tema": "oscuro",
+      "carga": "modulo-lento",
+      "cls": 0.017314,
+      "desplazamientos": [
+        {
+          "nodes": [
+            "DIV"
+          ],
+          "score": 0.002826894216080029,
+          "time": 883.5
+        },
+        {
+          "nodes": [
+            "navegacion",
+            "DIV",
+            "DIV"
+          ],
+          "score": 0.014487530905102174,
+          "time": 896.3000000007451
+        }
+      ]
+    },
+    {
+      "ancho": 1280,
+      "tema": "oscuro",
+      "carga": "modulo-lento",
+      "cls": 0.002456,
+      "desplazamientos": [
+        {
+          "nodes": [
+            "navegacion"
+          ],
+          "score": 0.0024560794695354105,
+          "time": 897.8000000007451
+        }
+      ]
+    },
+    {
+      "ancho": 1440,
+      "tema": "oscuro",
+      "carga": "modulo-lento",
+      "cls": 0.002228,
+      "desplazamientos": [
+        {
+          "nodes": [
+            "navegacion"
+          ],
+          "score": 0.0022281983015991088,
+          "time": 908.2000000011176
+        }
+      ]
+    },
+    {
+      "ancho": 320,
+      "tema": "claro",
+      "carga": "carga-lenta",
+      "cls": 0.215402,
+      "desplazamientos": [
+        {
+          "nodes": [
+            "contenido"
+          ],
+          "score": 0.10629989266663614,
+          "time": 897.4000000003725
+        },
+        {
+          "nodes": [
+            "contenido",
+            "DIV",
+            "A"
+          ],
+          "score": 0.2154022638924363,
+          "time": 2102.60000000149
+        }
+      ]
+    },
+    {
+      "ancho": 375,
+      "tema": "claro",
+      "carga": "carga-lenta",
+      "cls": 0.1063,
+      "desplazamientos": [
+        {
+          "nodes": [
+            "contenido"
+          ],
+          "score": 0.10629989266663614,
+          "time": 883.5999999996275
+        },
+        {
+          "nodes": [
+            "DIV"
+          ],
+          "score": 0.0020885625744652895,
+          "time": 2088.800000000745
+        }
+      ]
+    },
+    {
+      "ancho": 412,
+      "tema": "claro",
+      "carga": "carga-lenta",
+      "cls": 0.1063,
+      "desplazamientos": [
+        {
+          "nodes": [
+            "contenido"
+          ],
+          "score": 0.10629989266663614,
+          "time": 901.2999999988824
+        },
+        {
+          "nodes": [
+            "DIV"
+          ],
+          "score": 0.0019009974888943776,
+          "time": 2105.2999999988824
+        }
+      ]
+    },
+    {
+      "ancho": 768,
+      "tema": "claro",
+      "carga": "carga-lenta",
+      "cls": 0.05315,
+      "desplazamientos": [
+        {
+          "nodes": [
+            "contenido"
+          ],
+          "score": 0.05314994633331807,
+          "time": 882.5
+        },
+        {
+          "nodes": [
+            "DIV"
+          ],
+          "score": 0.0012939598097587196,
+          "time": 2087.10000000149
+        }
+      ]
+    },
+    {
+      "ancho": 1023,
+      "tema": "claro",
+      "carga": "carga-lenta",
+      "cls": 0.043395,
+      "desplazamientos": [
+        {
+          "nodes": [
+            "contenido"
+          ],
+          "score": 0.043395243881270605,
+          "time": 882.7999999988824
+        },
+        {
+          "nodes": [
+            "DIV"
+          ],
+          "score": 0.0007892135528311837,
+          "time": 2088.699999999255
+        }
+      ]
+    },
+    {
+      "ancho": 1024,
+      "tema": "claro",
+      "carga": "carga-lenta",
+      "cls": 0.014488,
+      "desplazamientos": [
+        {
+          "nodes": [
+            "DIV"
+          ],
+          "score": 0.002826894216080029,
+          "time": 884.7999999988824
+        },
+        {
+          "nodes": [
+            "navegacion",
+            "DIV",
+            "DIV"
+          ],
+          "score": 0.014487530905102174,
+          "time": 2090.2999999988824
+        }
+      ]
+    },
+    {
+      "ancho": 1280,
+      "tema": "claro",
+      "carga": "carga-lenta",
+      "cls": 0.002456,
+      "desplazamientos": [
+        {
+          "nodes": [
+            "navegacion"
+          ],
+          "score": 0.0024560794695354105,
+          "time": 2089.9000000003725
+        }
+      ]
+    },
+    {
+      "ancho": 1440,
+      "tema": "claro",
+      "carga": "carga-lenta",
+      "cls": 0.002228,
+      "desplazamientos": [
+        {
+          "nodes": [
+            "navegacion"
+          ],
+          "score": 0.0022281983015991088,
+          "time": 2090.4000000003725
+        }
+      ]
+    },
+    {
+      "ancho": 320,
+      "tema": "oscuro",
+      "carga": "carga-lenta",
+      "cls": 0.215402,
+      "desplazamientos": [
+        {
+          "nodes": [
+            "contenido"
+          ],
+          "score": 0.10629989266663614,
+          "time": 885.6999999992549
+        },
+        {
+          "nodes": [
+            "contenido",
+            "DIV",
+            "A"
+          ],
+          "score": 0.2154022638924363,
+          "time": 2091
+        }
+      ]
+    },
+    {
+      "ancho": 375,
+      "tema": "oscuro",
+      "carga": "carga-lenta",
+      "cls": 0.1063,
+      "desplazamientos": [
+        {
+          "nodes": [
+            "contenido"
+          ],
+          "score": 0.10629989266663614,
+          "time": 882.4000000003725
+        },
+        {
+          "nodes": [
+            "DIV"
+          ],
+          "score": 0.0020885625744652895,
+          "time": 2088.0999999996275
+        }
+      ]
+    },
+    {
+      "ancho": 412,
+      "tema": "oscuro",
+      "carga": "carga-lenta",
+      "cls": 0.1063,
+      "desplazamientos": [
+        {
+          "nodes": [
+            "contenido"
+          ],
+          "score": 0.10629989266663614,
+          "time": 885.8000000007451
+        },
+        {
+          "nodes": [
+            "DIV"
+          ],
+          "score": 0.0019009974888943776,
+          "time": 2088.699999999255
+        }
+      ]
+    },
+    {
+      "ancho": 768,
+      "tema": "oscuro",
+      "carga": "carga-lenta",
+      "cls": 0.05315,
+      "desplazamientos": [
+        {
+          "nodes": [
+            "contenido"
+          ],
+          "score": 0.05314994633331807,
+          "time": 884.6999999992549
+        },
+        {
+          "nodes": [
+            "DIV"
+          ],
+          "score": 0.0012939598097587196,
+          "time": 2088.2999999988824
+        }
+      ]
+    },
+    {
+      "ancho": 1023,
+      "tema": "oscuro",
+      "carga": "carga-lenta",
+      "cls": 0.043395,
+      "desplazamientos": [
+        {
+          "nodes": [
+            "contenido"
+          ],
+          "score": 0.043395243881270605,
+          "time": 884.5999999996275
+        },
+        {
+          "nodes": [
+            "DIV"
+          ],
+          "score": 0.0007892135528311837,
+          "time": 2089.199999999255
+        }
+      ]
+    },
+    {
+      "ancho": 1024,
+      "tema": "oscuro",
+      "carga": "carga-lenta",
+      "cls": 0.014488,
+      "desplazamientos": [
+        {
+          "nodes": [
+            "DIV"
+          ],
+          "score": 0.002826894216080029,
+          "time": 902.0999999996275
+        },
+        {
+          "nodes": [
+            "navegacion",
+            "DIV",
+            "DIV"
+          ],
+          "score": 0.014487530905102174,
+          "time": 2105.5999999996275
+        }
+      ]
+    },
+    {
+      "ancho": 1280,
+      "tema": "oscuro",
+      "carga": "carga-lenta",
+      "cls": 0.002456,
+      "desplazamientos": [
+        {
+          "nodes": [
+            "navegacion"
+          ],
+          "score": 0.0024560794695354105,
+          "time": 2087.699999999255
+        }
+      ]
+    },
+    {
+      "ancho": 1440,
+      "tema": "oscuro",
+      "carga": "carga-lenta",
+      "cls": 0.002228,
+      "desplazamientos": [
+        {
+          "nodes": [
+            "navegacion"
+          ],
+          "score": 0.0022281983015991088,
+          "time": 2088.699999999255
+        }
+      ]
+    }
+  ]
+}

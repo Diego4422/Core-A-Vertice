@@ -32,7 +32,7 @@
 <body id="inicio" class="bg-white font-sans leading-relaxed text-graphite dark:bg-graphite dark:text-white">
   <a class="fixed top-3 left-gutter z-30 -translate-y-[160%] rounded-sm bg-white px-4 py-2 text-graphite focus:translate-y-0" href="#contenido">Ir al contenido</a>
 
-  <header class="group sticky top-0 z-20 border-b border-border-dark bg-graphite data-[menu=static]:static" data-header data-menu="static" data-dark-surface>
+  <header class="group sticky top-0 z-20 border-b border-border-dark bg-graphite data-[menu=static]:static data-tall:static" data-header data-menu="static" data-dark-surface>
     <div class="mx-auto w-full max-w-[89rem] px-gutter flex min-h-18 flex-wrap items-center justify-between gap-x-3 py-2 lg:justify-start">
       <a class="inline-flex min-h-11 shrink-0 items-center gap-2.5 text-white" href="#inicio" aria-label="VÉRTICE Technology, inicio">
         <svg class="shrink-0 text-copper" width="34" height="34" viewBox="0 0 36 36" aria-hidden="true">
@@ -41,8 +41,8 @@
         </svg>
         <span class="flex flex-col font-display text-[1.35rem] leading-none font-bold tracking-[0.06em]">VÉRTICE <span class="mt-1 font-sans text-[0.625rem] font-semibold tracking-[0.21em] text-titanium-light">TECHNOLOGY</span></span>
       </a>
-      <div class="flex max-w-full flex-wrap items-center gap-2">
-        <button class="inline-flex size-11 cursor-pointer items-center justify-center rounded-sm border border-titanium text-titanium-light hover:border-titanium-light hover:text-white" type="button" aria-pressed="false" aria-label="Modo oscuro" title="Modo oscuro" data-theme-toggle hidden>
+      <div class="flex max-w-full flex-wrap items-center gap-2 group-data-[menu=static]:hidden">
+        <button class="inline-flex size-11 cursor-pointer items-center justify-center rounded-sm border border-titanium text-titanium-light hover:border-titanium-light hover:text-white disabled:invisible" type="button" aria-pressed="false" aria-label="Modo oscuro" title="Modo oscuro" data-theme-toggle disabled>
           <svg class="size-5 dark:hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
             <path d="M20.5 15.5A9 9 0 0 1 8.5 3.5a9 9 0 1 0 12 12Z"/>
           </svg>
@@ -51,21 +51,21 @@
             <path d="M12 2v3m0 14v3M2 12h3m14 0h3M5 5l2 2m10 10 2 2M5 19l2-2M17 7l2-2"/>
           </svg>
         </button>
-        <button class="inline-flex min-h-11 min-w-11 cursor-pointer items-center justify-center gap-1.5 rounded-sm border border-titanium px-2 text-white hover:border-titanium-light" type="button" aria-label="Abrir carrito, 0 unidades" aria-controls="carrito-panel" aria-expanded="false" data-cart-trigger hidden>
+        <button class="inline-flex min-h-11 w-[calc(3.25rem+1ch+2px)] min-w-11 cursor-pointer items-center justify-center gap-1.5 rounded-sm border border-titanium text-xs font-semibold text-white tabular-nums hover:border-titanium-light disabled:invisible" type="button" aria-label="Abrir carrito, 0 unidades" aria-controls="carrito-panel" aria-expanded="false" data-cart-trigger disabled>
           <svg class="size-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
             <path d="M5 8h14l1 13H4L5 8Zm4 2V6a3 3 0 1 1 6 0v4"/>
           </svg>
-          <span class="rounded-sm bg-copper px-1.5 py-0.5 text-xs font-semibold text-graphite tabular-nums" data-cart-count aria-hidden="true">0</span>
+          <span class="rounded-sm bg-copper px-1.5 py-0.5 text-graphite data-wide:px-0.5" data-cart-count aria-hidden="true">0</span>
         </button>
         <span class="sr-only" aria-live="polite" aria-atomic="true" data-cart-announcement></span>
-        <button class="inline-flex min-h-11 cursor-pointer items-center gap-1.5 rounded-sm border border-titanium px-2.5 text-sm text-white max-sm:size-11 max-sm:justify-center max-sm:px-0 lg:hidden" type="button" aria-controls="navegacion" aria-expanded="false" data-menu-toggle hidden>
+        <button class="inline-flex min-h-11 cursor-pointer items-center gap-1.5 rounded-sm border border-titanium px-2.5 text-sm text-white max-sm:size-11 max-sm:justify-center max-sm:px-0 disabled:invisible lg:hidden" type="button" aria-controls="navegacion" aria-expanded="false" data-menu-toggle disabled>
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
             <path d="M3 6h18M3 12h18M3 18h18"/>
           </svg>
           <span class="max-sm:sr-only">Menú</span>
         </button>
       </div>
-      <nav class="flex w-full flex-wrap items-center gap-x-4 gap-y-1 pt-2 pb-1 text-sm max-lg:group-data-[menu=closed]:hidden max-lg:group-data-[menu=open]:max-h-[60dvh] max-lg:group-data-[menu=open]:overflow-auto lg:min-w-0 lg:flex-1 lg:justify-end lg:gap-x-5 lg:py-0 xl:gap-x-7" id="navegacion" aria-label="Navegación principal">
+      <nav class="flex w-full flex-wrap items-center gap-x-4 gap-y-1 pt-2 pb-1 text-sm max-lg:group-data-[menu=closed]:hidden max-lg:group-data-[menu=open]:max-h-[min(60dvh,calc(100dvh-var(--header-height,0px)))] max-lg:group-data-[menu=open]:overflow-auto lg:min-w-0 lg:flex-1 lg:justify-end lg:gap-x-5 lg:py-0 xl:gap-x-7" id="navegacion" aria-label="Navegación principal">
         <a class="inline-flex min-h-11 items-center text-titanium-light hover:text-white hover:underline underline-offset-4" href="#catalogo">Catálogo</a>
         <a class="inline-flex min-h-11 items-center text-titanium-light hover:text-white hover:underline underline-offset-4" href="#colecciones">Colecciones</a>
         <a class="inline-flex min-h-11 items-center text-titanium-light hover:text-white hover:underline underline-offset-4" href="#ecosistema">Ecosistema</a>
@@ -75,6 +75,55 @@
       </nav>
     </div>
   </header>
+  <script>
+    (() => {
+      const header = document.querySelector('[data-header]');
+      const menu = header?.querySelector('[data-menu-toggle]');
+      const nav = header?.querySelector('#navegacion');
+      if (!menu || !nav) return;
+      let closedHeight = 0;
+
+      function updateHeaderHeight() {
+        if (header.dataset.menu !== 'open') closedHeight = header.offsetHeight;
+        const tall = closedHeight >= window.innerHeight / 2;
+        header.toggleAttribute('data-tall', tall);
+        document.documentElement.style.setProperty('--header-height', (tall ? 0 : closedHeight) + 'px');
+      }
+
+      function setMenu(open) {
+        menu.setAttribute('aria-expanded', String(open));
+        header.dataset.menu = open ? 'open' : 'closed';
+      }
+
+      menu.addEventListener('click', () => setMenu(header.dataset.menu !== 'open'));
+      nav.addEventListener('click', (event) => {
+        const link = event.target instanceof Element && event.target.closest('a');
+        if (!link || header.dataset.menu !== 'open') return;
+
+        const destination = document.getElementById(link.hash.slice(1));
+        setMenu(false);
+        updateHeaderHeight();
+        (destination || menu).focus({ preventScroll: true });
+      });
+      header.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape' && header.dataset.menu === 'open') {
+          setMenu(false);
+          if (menu.getClientRects().length) menu.focus();
+        }
+      });
+      header.addEventListener('focusout', (event) => {
+        const next = event.relatedTarget;
+        if (next && (!(next instanceof Node) || !header.contains(next))) setMenu(false);
+      });
+
+      // Contraer solo cuando el menú pueda abrirse sin el módulo del catálogo.
+      menu.disabled = false;
+      setMenu(false);
+      updateHeaderHeight();
+      window.addEventListener('resize', updateHeaderHeight);
+      if (window.ResizeObserver) new ResizeObserver(updateHeaderHeight).observe(header);
+    })();
+  </script>
 
   <main id="contenido" class="wrap-anywhere" tabindex="-1" data-focus-destination>
     <section class="bg-graphite py-[clamp(2.5rem,5.2vw,4.75rem)] text-white" data-dark-surface aria-labelledby="hero-titulo">

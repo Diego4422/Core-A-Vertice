@@ -47,6 +47,10 @@
     scroll-padding-top: max(6rem, calc(var(--header-height, 0px) + 0.5rem));
   }
 
+  html:has([data-header][data-tall]) {
+    scroll-padding-top: 0.5rem;
+  }
+
   h1, h2, h3 {
     @apply font-display font-bold tracking-[-0.045em];
   }
