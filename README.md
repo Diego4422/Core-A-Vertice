@@ -6,13 +6,13 @@ VÉRTICE Technology es una marca ficticia de audio, periféricos, conectividad y
 
 ## Tres versiones, una misma marca
 
-| Versión | Funcionalidades | Tecnología | Vercel |
+| Versión | Funcionalidades | Tecnología | Demo pública |
 | --- | --- | --- | --- |
-| [V1 · Landing](V1-Landing/) | Presentación comercial, cuatro productos destacados, menú con teclado y cotización demostrativa. | HTML semántico, CSS con BEM, Flexbox y Grid, JavaScript nativo. | Pendiente de publicación |
-| [V2 · Professional](V2-Professional/) | Fichas comparativas, editorial «Ecosistema en armonía», tema claro y oscuro y validación accesible por campo. | Tailwind CSS 4.3.5 y Forms 0.5.11, CSS compilado reproducible, JavaScript nativo. | Pendiente de publicación |
-| [V3 · Catalog](V3-Catalog/) | Doce productos, búsqueda por texto y filtros combinables, carrito persistente en céntimos enteros, tema persistente y copia del resumen. | Módulos ES, Fetch API, JSON local, HTML de respaldo, `localStorage`, Tailwind CSS y pruebas con `node:test`. | Pendiente de publicación |
+| [V1 · Landing](V1-Landing/) | Presentación comercial, cuatro productos destacados, menú con teclado y cotización demostrativa. | HTML semántico, CSS con BEM, Flexbox y Grid, JavaScript nativo. | [Abrir Landing](https://vertice-landing-153.pages.dev/) |
+| [V2 · Professional](V2-Professional/) | Fichas comparativas, editorial «Ecosistema en armonía», tema claro y oscuro y validación accesible por campo. | Tailwind CSS 4.3.5 y Forms 0.5.11, CSS compilado reproducible, JavaScript nativo. | [Abrir Professional](https://vertice-professional.pages.dev/) |
+| [V3 · Catalog](V3-Catalog/) | Doce productos, búsqueda por texto y filtros combinables, carrito persistente en céntimos enteros, tema persistente y copia del resumen. | Módulos ES, Fetch API, JSON local, HTML de respaldo, `localStorage`, Tailwind CSS y pruebas con `node:test`. | [Abrir Catalog](https://vertice-catalog.pages.dev/) |
 
-Cada versión se ejecuta de forma independiente. El historial conserva las entregas aprobadas en `v1.0-vertice`, `v2.0-vertice` y `v3.0-vertice`.
+Las tres demos se alojan en proyectos independientes de Cloudflare Pages Free conectados a la rama `main`. Cada proyecto publica el HTML, el CSS compilado y los recursos de su directorio. El historial conserva las entregas aprobadas en `v1.0-vertice`, `v2.0-vertice` y `v3.0-vertice`.
 
 ## Capturas reales
 
@@ -53,7 +53,7 @@ Abre [http://127.0.0.1:8080/](http://127.0.0.1:8080/). Sustituye `V3-Catalog` po
 
 - El formulario de cotización no envía ni guarda datos personales. En V3, el carrito guarda solo IDs de productos y cantidades en el navegador. El resumen se copia localmente y WhatsApp permanece desactivado.
 - El catálogo de V3 requiere HTTP para sus módulos y su carga JSON. Las doce fichas y sus precios siguen visibles sin JavaScript. Si falla el JSON con el módulo disponible, la búsqueda y el carrito operan sobre el respaldo HTML.
-- La verificación de navegador se hizo en Chromium. Las puntuaciones de accesibilidad corresponden a las comprobaciones registradas. Los despliegues y las URLs absolutas de Open Graph están pendientes.
+- La verificación de navegador se hizo en Chromium. Las puntuaciones de accesibilidad corresponden a las comprobaciones registradas.
 
 ## Autoría y recursos
 
