@@ -1,0 +1,13 @@
+{
+  "node": "v26.13.1",
+  "npm": "12.2.3",
+  "npm_ci": "npm ci --offline con la caché existente, 33 paquetes",
+  "compilacion": "npm run build ejecuta sync:catalog y build:css",
+  "compilaciones": 2,
+  "archivos_identicos": true,
+  "css_bytes": 33056,
+  "sha256": {
+    "index.html": "d3ef776450e2c67f64c74a0450d871461cc79cd29107433c2305efd877721239",
+    "css/styles.css": "019ee54c17370b6bf15689ee2fbac51b503fbeac6a8b54d3cf39ed574fcd358d"
+  }
+}

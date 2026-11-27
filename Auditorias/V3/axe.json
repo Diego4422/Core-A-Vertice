@@ -1,0 +1,154 @@
+[
+  {
+    "tema": "claro",
+    "ancho": 375,
+    "estado": "catalogo",
+    "infracciones": [],
+    "pasadas": 32,
+    "revision_manual": [],
+    "version": "4.14.0"
+  },
+  {
+    "tema": "claro",
+    "ancho": 375,
+    "estado": "carrito abierto",
+    "infracciones": [],
+    "pasadas": 21,
+    "revision_manual": [
+      [
+        "color-contrast",
+        [
+          [
+            "button[data-action=\"decrease\"]"
+          ]
+        ]
+      ],
+      [
+        "label-content-name-mismatch",
+        [
+          [
+            "button[data-action=\"decrease\"]"
+          ],
+          [
+            "button[data-action=\"increase\"]"
+          ]
+        ]
+      ]
+    ],
+    "version": "4.14.0"
+  },
+  {
+    "tema": "claro",
+    "ancho": 1440,
+    "estado": "catalogo",
+    "infracciones": [],
+    "pasadas": 32,
+    "revision_manual": [],
+    "version": "4.14.0"
+  },
+  {
+    "tema": "claro",
+    "ancho": 1440,
+    "estado": "carrito abierto",
+    "infracciones": [],
+    "pasadas": 21,
+    "revision_manual": [
+      [
+        "color-contrast",
+        [
+          [
+            "button[data-action=\"decrease\"]"
+          ]
+        ]
+      ],
+      [
+        "label-content-name-mismatch",
+        [
+          [
+            "button[data-action=\"decrease\"]"
+          ],
+          [
+            "button[data-action=\"increase\"]"
+          ]
+        ]
+      ]
+    ],
+    "version": "4.14.0"
+  },
+  {
+    "tema": "oscuro",
+    "ancho": 375,
+    "estado": "catalogo",
+    "infracciones": [],
+    "pasadas": 32,
+    "revision_manual": [],
+    "version": "4.14.0"
+  },
+  {
+    "tema": "oscuro",
+    "ancho": 375,
+    "estado": "carrito abierto",
+    "infracciones": [],
+    "pasadas": 21,
+    "revision_manual": [
+      [
+        "color-contrast",
+        [
+          [
+            "button[data-action=\"decrease\"]"
+          ]
+        ]
+      ],
+      [
+        "label-content-name-mismatch",
+        [
+          [
+            "button[data-action=\"decrease\"]"
+          ],
+          [
+            "button[data-action=\"increase\"]"
+          ]
+        ]
+      ]
+    ],
+    "version": "4.14.0"
+  },
+  {
+    "tema": "oscuro",
+    "ancho": 1440,
+    "estado": "catalogo",
+    "infracciones": [],
+    "pasadas": 32,
+    "revision_manual": [],
+    "version": "4.14.0"
+  },
+  {
+    "tema": "oscuro",
+    "ancho": 1440,
+    "estado": "carrito abierto",
+    "infracciones": [],
+    "pasadas": 21,
+    "revision_manual": [
+      [
+        "color-contrast",
+        [
+          [
+            "button[data-action=\"decrease\"]"
+          ]
+        ]
+      ],
+      [
+        "label-content-name-mismatch",
+        [
+          [
+            "button[data-action=\"decrease\"]"
+          ],
+          [
+            "button[data-action=\"increase\"]"
+          ]
+        ]
+      ]
+    ],
+    "version": "4.14.0"
+  }
+]

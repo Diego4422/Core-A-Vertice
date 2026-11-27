@@ -1,0 +1,18 @@
+{
+  "name": "core-a-vertice-v3",
+  "version": "3.0.0",
+  "private": true,
+  "scripts": {
+    "build:css": "tailwindcss -i ./css/input.css -o ./css/styles.css --minify",
+    "dev:css": "tailwindcss -i ./css/input.css -o ./css/styles.css --watch",
+    "sync:catalog": "node scripts/sync-catalog.js",
+    "build": "npm run sync:catalog && npm run build:css",
+    "test": "node --test"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "4.3.5",
+    "@tailwindcss/forms": "0.5.11",
+    "tailwindcss": "4.3.5"
+  },
+  "type": "module"
+}

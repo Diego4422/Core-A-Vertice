@@ -1,0 +1,249 @@
+[
+  {
+    "id": "vt-aud-01",
+    "name": "VÉRTICE Aura ANC",
+    "category": "Audio",
+    "priceCents": 89900,
+    "shortDescription": "Auriculares inalámbricos over-ear con cancelación activa de ruido y chasis de aluminio anodizado.",
+    "specs": [
+      "Cancelación activa híbrida",
+      "Hasta 40 h de uso",
+      "Carga USB-C"
+    ],
+    "image": "assets/img/prod-aura-anc.webp",
+    "alt": "Auriculares de diadema grafito con acabado metálico sobre fondo claro",
+    "searchTags": [
+      "auriculares",
+      "audífonos",
+      "anc",
+      "bluetooth",
+      "over-ear"
+    ]
+  },
+  {
+    "id": "vt-aud-02",
+    "name": "VÉRTICE Pulse Air",
+    "category": "Audio",
+    "priceCents": 54900,
+    "shortDescription": "Earbuds inalámbricos ultraligeros con estuche compacto de acabado mate y micrófonos direccionales.",
+    "specs": [
+      "Perfil acústico balanceado",
+      "Estuche de carga rápida",
+      "Controles táctiles"
+    ],
+    "image": "assets/img/prod-pulse-air.webp",
+    "alt": "Dos auriculares grafito junto a su estuche de carga abierto, sobre fondo claro",
+    "searchTags": [
+      "earbuds",
+      "in-ear",
+      "inalámbricos",
+      "bluetooth"
+    ]
+  },
+  {
+    "id": "vt-aud-03",
+    "name": "VÉRTICE Mono S1",
+    "category": "Audio",
+    "priceCents": 39900,
+    "shortDescription": "Altavoz portátil con acabado textil acústico y cuerpo compacto de polímero mate.",
+    "specs": [
+      "Bluetooth 5.3",
+      "Hasta 18 h de batería",
+      "Entrada USB-C"
+    ],
+    "image": "assets/img/prod-mono-s1.webp",
+    "alt": "Altavoz rectangular compacto con frente textil oscuro, borde cobrizo y correa lateral",
+    "searchTags": [
+      "altavoz",
+      "parlante",
+      "speaker",
+      "portátil"
+    ]
+  },
+  {
+    "id": "vt-per-01",
+    "name": "VÉRTICE Tactile 75",
+    "category": "Periféricos",
+    "priceCents": 48900,
+    "shortDescription": "Teclado mecánico compacto al 75% con estructura de aluminio, switches táctiles silenciosos y perilla metálica.",
+    "specs": [
+      "Distribución al 75 %",
+      "Switches táctiles lubricados",
+      "USB-C, 2.4G y Bluetooth"
+    ],
+    "image": "assets/img/prod-tactile-75.webp",
+    "alt": "Teclado compacto grafito con una perilla metálica sobre fondo claro",
+    "searchTags": [
+      "teclado",
+      "mecánico",
+      "switches",
+      "teclas"
+    ]
+  },
+  {
+    "id": "vt-per-02",
+    "name": "VÉRTICE Ergo Pro",
+    "category": "Periféricos",
+    "priceCents": 32900,
+    "shortDescription": "Ratón ergonómico esculpido para jornadas prolongadas con rueda electromagnética de alta precisión.",
+    "specs": [
+      "Sensor óptico de 8000 DPI",
+      "Rueda de desplazamiento dual",
+      "Carga USB-C"
+    ],
+    "image": "assets/img/prod-ergo-pro.webp",
+    "alt": "Ratón grafito de perfil inclinado con apoyo lateral y rueda oscura, sobre fondo claro",
+    "searchTags": [
+      "ratón",
+      "mouse",
+      "ergonómico",
+      "inalámbrico"
+    ]
+  },
+  {
+    "id": "vt-per-03",
+    "name": "VÉRTICE Glide Mini",
+    "category": "Periféricos",
+    "priceCents": 21900,
+    "shortDescription": "Ratón compacto de perfil bajo diseñado para movilidad, trabajo híbrido y escritorios minimalistas.",
+    "specs": [
+      "Peso de 68 g",
+      "Clics silenciosos",
+      "Bluetooth y receptor USB-C"
+    ],
+    "image": "assets/img/prod-glide-mini.webp",
+    "alt": "Ratón compacto grafito con rueda y borde cobrizos sobre una superficie oscura",
+    "searchTags": [
+      "ratón",
+      "mouse",
+      "compacto",
+      "portátil",
+      "silencioso"
+    ]
+  },
+  {
+    "id": "vt-con-01",
+    "name": "VÉRTICE Link 7-in-1",
+    "category": "Conectividad",
+    "priceCents": 18900,
+    "shortDescription": "Hub USB-C en aluminio fresado que amplía tu portátil con video 4K, lectura de tarjetas y carga directa.",
+    "specs": [
+      "HDMI 4K a 60 Hz",
+      "Lector SD y microSD",
+      "Power Delivery de 100 W"
+    ],
+    "image": "assets/img/prod-link-7in1.webp",
+    "alt": "Hub grafito con puertos frontales y laterales, borde cobrizo y cable USB-C corto",
+    "searchTags": [
+      "hub",
+      "usb-c",
+      "adaptador",
+      "hdmi",
+      "sd"
+    ]
+  },
+  {
+    "id": "vt-con-02",
+    "name": "VÉRTICE Dock Studio",
+    "category": "Conectividad",
+    "priceCents": 59900,
+    "shortDescription": "Estación de conexión de escritorio de un solo cable para configuraciones de doble monitor y red cableada.",
+    "specs": [
+      "Doble salida 4K",
+      "Ethernet Gigabit",
+      "Entrega de energía de 96 W"
+    ],
+    "image": "assets/img/prod-dock-studio.webp",
+    "alt": "Estación de conexión con puertos frontales sobre un escritorio junto a una pantalla",
+    "searchTags": [
+      "dock",
+      "estación",
+      "hub",
+      "escritorio",
+      "monitores"
+    ]
+  },
+  {
+    "id": "vt-con-03",
+    "name": "VÉRTICE Charge Pad",
+    "category": "Conectividad",
+    "priceCents": 24900,
+    "shortDescription": "Base de carga inalámbrica individual con cuerpo ponderado y superficie antideslizante.",
+    "specs": [
+      "Carga magnética de 15 W",
+      "Indicador LED discreto",
+      "Protección térmica"
+    ],
+    "image": "assets/img/prod-charge-pad.webp",
+    "alt": "Base circular grafito con un símbolo de carga al centro, borde cobrizo y cable",
+    "searchTags": [
+      "cargador",
+      "inalámbrico",
+      "magnético",
+      "qi",
+      "carga"
+    ]
+  },
+  {
+    "id": "vt-wsp-01",
+    "name": "VÉRTICE Rise Alloy",
+    "category": "Workspace",
+    "priceCents": 19900,
+    "shortDescription": "Soporte para laptop en aluminio anodizado que eleva la pantalla a la altura visual y mejora la ventilación.",
+    "specs": [
+      "Compatible con 13 a 16 pulgadas",
+      "Almohadillas de silicona",
+      "Canal trasero para cables"
+    ],
+    "image": "assets/img/prod-rise-alloy.webp",
+    "alt": "Soporte grafito inclinado con ranuras de ventilación y articulaciones cobrizas",
+    "searchTags": [
+      "soporte",
+      "stand",
+      "laptop",
+      "aluminio",
+      "escritorio"
+    ]
+  },
+  {
+    "id": "vt-wsp-02",
+    "name": "VÉRTICE Halo Bar",
+    "category": "Workspace",
+    "priceCents": 27900,
+    "shortDescription": "Lámpara asimétrica para monitor que ilumina el escritorio sin generar reflejos en la pantalla.",
+    "specs": [
+      "Óptica asimétrica antirreflejo",
+      "Temperatura de 2700 a 6500 K",
+      "Alimentación USB-C"
+    ],
+    "image": "assets/img/prod-halo-bar.webp",
+    "alt": "Barra de luz cálida montada sobre un monitor, con un controlador circular en el escritorio",
+    "searchTags": [
+      "lámpara",
+      "luz",
+      "monitor",
+      "escritorio",
+      "iluminación"
+    ]
+  },
+  {
+    "id": "vt-wsp-03",
+    "name": "VÉRTICE Matte XL",
+    "category": "Workspace",
+    "priceCents": 13900,
+    "shortDescription": "Alfombrilla de escritorio de gran formato en fieltro técnico y cuero vegano con base antideslizante.",
+    "specs": [
+      "Dimensiones de 90 × 40 cm",
+      "Bordes sellados",
+      "Resistencia a salpicaduras"
+    ],
+    "image": "assets/img/prod-matte-xl.webp",
+    "alt": "Alfombrilla grafito rectangular de borde cobrizo junto a una taza y una computadora",
+    "searchTags": [
+      "alfombrilla",
+      "deskmat",
+      "mousepad",
+      "escritorio"
+    ]
+  }
+]

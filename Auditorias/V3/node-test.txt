@@ -1,0 +1,23 @@
+npm notice run core-a-vertice-v3@3.0.0 test
+npm notice run node --test
+✔ normaliza mayúsculas, tildes, espacios y entradas inesperadas (1.50447ms)
+✔ combina términos y categorías, admite etiquetas y devuelve un estado vacío (1.33069ms)
+✔ formatea céntimos enteros con precisión y rechaza valores inválidos (0.327332ms)
+✔ añade, incrementa, reduce hasta retirar y conserva inmutabilidad (0.418285ms)
+✔ limita a 99 y rechaza ID, incremento o decremento inaplicables (0.215149ms)
+✔ sanitiza estructuras corruptas, duplicados, IDs desconocidos y cantidades inválidas (0.438745ms)
+✔ calcula subtotales y total en céntimos con precios del catálogo validado (0.322162ms)
+✔ la validación exige doce fichas coherentes, identificadores únicos y un total seguro (0.754544ms)
+✔ fetch comprueba HTTP antes de leer y rechaza JSON o esquema inválido (2.480165ms)
+✔ el respaldo generado contiene los datos, precios y fotos de los doce productos (1.244687ms)
+✔ filtra lo persistido, guarda solo ID y cantidad y separa el tema (0.975424ms)
+✔ si el almacenamiento falla, la lectura y las escrituras degradan sin excepciones (0.325068ms)
+✔ genera texto plano y una URL demostrativa bien codificada sin destinatario (0.545488ms)
+ℹ tests 13
+ℹ suites 0
+ℹ pass 13
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 101.993579

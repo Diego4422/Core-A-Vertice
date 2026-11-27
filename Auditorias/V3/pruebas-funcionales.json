@@ -1,0 +1,369 @@
+{
+  "responsive": [
+    {
+      "tema": "claro",
+      "ancho": 320,
+      "columnas": 1,
+      "fuera": [],
+      "viewport": 320,
+      "visible": 320
+    },
+    {
+      "tema": "claro",
+      "ancho": 375,
+      "columnas": 1,
+      "fuera": [],
+      "viewport": 375,
+      "visible": 375
+    },
+    {
+      "tema": "claro",
+      "ancho": 753,
+      "columnas": 2,
+      "fuera": [],
+      "viewport": 768,
+      "visible": 753
+    },
+    {
+      "tema": "claro",
+      "ancho": 1009,
+      "columnas": 3,
+      "fuera": [],
+      "viewport": 1024,
+      "visible": 1009
+    },
+    {
+      "tema": "claro",
+      "ancho": 1265,
+      "columnas": 4,
+      "fuera": [],
+      "viewport": 1280,
+      "visible": 1265
+    },
+    {
+      "tema": "claro",
+      "ancho": 1425,
+      "columnas": 4,
+      "fuera": [],
+      "viewport": 1440,
+      "visible": 1425
+    },
+    {
+      "tema": "oscuro",
+      "ancho": 320,
+      "columnas": 1,
+      "fuera": [],
+      "viewport": 320,
+      "visible": 320
+    },
+    {
+      "tema": "oscuro",
+      "ancho": 375,
+      "columnas": 1,
+      "fuera": [],
+      "viewport": 375,
+      "visible": 375
+    },
+    {
+      "tema": "oscuro",
+      "ancho": 753,
+      "columnas": 2,
+      "fuera": [],
+      "viewport": 768,
+      "visible": 753
+    },
+    {
+      "tema": "oscuro",
+      "ancho": 1009,
+      "columnas": 3,
+      "fuera": [],
+      "viewport": 1024,
+      "visible": 1009
+    },
+    {
+      "tema": "oscuro",
+      "ancho": 1265,
+      "columnas": 4,
+      "fuera": [],
+      "viewport": 1280,
+      "visible": 1265
+    },
+    {
+      "tema": "oscuro",
+      "ancho": 1425,
+      "columnas": 4,
+      "fuera": [],
+      "viewport": 1440,
+      "visible": 1425
+    }
+  ],
+  "zoom": [
+    {
+      "tema": "claro",
+      "porcentaje": 200,
+      "ancho": 320,
+      "columnas": 1,
+      "fuera": [],
+      "viewport": 320,
+      "visible": true,
+      "foco": "catalogo",
+      "indicador": "underline"
+    },
+    {
+      "tema": "claro",
+      "porcentaje": 150,
+      "ancho": 1009,
+      "columnas": 3,
+      "fuera": [],
+      "viewport": 1024,
+      "visible": true,
+      "foco": "catalogo",
+      "indicador": "underline"
+    },
+    {
+      "tema": "claro",
+      "porcentaje": 200,
+      "ancho": 1009,
+      "columnas": 3,
+      "fuera": [],
+      "viewport": 1024,
+      "visible": true,
+      "foco": "catalogo",
+      "indicador": "underline"
+    },
+    {
+      "tema": "claro",
+      "porcentaje": 150,
+      "ancho": 1265,
+      "columnas": 4,
+      "fuera": [],
+      "viewport": 1280,
+      "visible": true,
+      "foco": "catalogo",
+      "indicador": "underline"
+    },
+    {
+      "tema": "claro",
+      "porcentaje": 200,
+      "ancho": 1265,
+      "columnas": 4,
+      "fuera": [],
+      "viewport": 1280,
+      "visible": true,
+      "foco": "catalogo",
+      "indicador": "underline"
+    },
+    {
+      "tema": "oscuro",
+      "porcentaje": 200,
+      "ancho": 320,
+      "columnas": 1,
+      "fuera": [],
+      "viewport": 320,
+      "visible": true,
+      "foco": "catalogo",
+      "indicador": "underline"
+    },
+    {
+      "tema": "oscuro",
+      "porcentaje": 150,
+      "ancho": 1009,
+      "columnas": 3,
+      "fuera": [],
+      "viewport": 1024,
+      "visible": true,
+      "foco": "catalogo",
+      "indicador": "underline"
+    },
+    {
+      "tema": "oscuro",
+      "porcentaje": 200,
+      "ancho": 1009,
+      "columnas": 3,
+      "fuera": [],
+      "viewport": 1024,
+      "visible": true,
+      "foco": "catalogo",
+      "indicador": "underline"
+    },
+    {
+      "tema": "oscuro",
+      "porcentaje": 150,
+      "ancho": 1265,
+      "columnas": 4,
+      "fuera": [],
+      "viewport": 1280,
+      "visible": true,
+      "foco": "catalogo",
+      "indicador": "underline"
+    },
+    {
+      "tema": "oscuro",
+      "porcentaje": 200,
+      "ancho": 1265,
+      "columnas": 4,
+      "fuera": [],
+      "viewport": 1280,
+      "visible": true,
+      "foco": "catalogo",
+      "indicador": "underline"
+    }
+  ],
+  "capturas": [
+    {
+      "archivo": "catalogo-claro-375.png",
+      "ancho": 375,
+      "alto": 9155
+    },
+    {
+      "archivo": "carrito-claro-375.png",
+      "ancho": 375,
+      "alto": 812
+    },
+    {
+      "archivo": "catalogo-claro-1440.png",
+      "ancho": 1440,
+      "alto": 2650
+    },
+    {
+      "archivo": "carrito-claro-1440.png",
+      "ancho": 1440,
+      "alto": 960
+    },
+    {
+      "archivo": "catalogo-oscuro-375.png",
+      "ancho": 375,
+      "alto": 9155
+    },
+    {
+      "archivo": "carrito-oscuro-375.png",
+      "ancho": 375,
+      "alto": 812
+    },
+    {
+      "archivo": "catalogo-oscuro-1440.png",
+      "ancho": 1440,
+      "alto": 2650
+    },
+    {
+      "archivo": "carrito-oscuro-1440.png",
+      "ancho": 1440,
+      "alto": 960
+    }
+  ],
+  "contrastes": {
+    "claro": {
+      "texto tarjeta": 18.62,
+      "acento tarjeta": 5.08,
+      "texto filtro activo": 6.26,
+      "límite buscador": 5.77,
+      "cta tarjeta": 6.26
+    },
+    "oscuro": {
+      "texto tarjeta": 16.91,
+      "acento tarjeta": 5.68,
+      "texto filtro activo": 6.26,
+      "límite buscador": 7.62,
+      "cta tarjeta": 6.26
+    }
+  },
+  "url": "http://127.0.0.1:8769/",
+  "chromium": "157.0.8103.78",
+  "consola_flujo_normal": [],
+  "herencia_V2": {
+    "formulario_centrado": true,
+    "cero_peticiones_formulario": true,
+    "foco": true,
+    "tema_y_menu_y_carrito": true
+  },
+  "carrito": {
+    "importe": "S/ 2287.00 verificado",
+    "crud": true,
+    "recarga": true,
+    "whatsapp_desactivado": true,
+    "copia_real": true,
+    "copia_denegada_manual": true,
+    "peticiones_externas": 0,
+    "teclado_y_backdrop": true,
+    "controles_44px": true,
+    "foco_al_eliminar_y_vaciar": true
+  },
+  "almacenamiento": {
+    "corrupto_recuperado": true,
+    "ids_y_cantidades_invalidos_descartados": true,
+    "precios_revinculados": true,
+    "tema_recarga_e_independencia": true,
+    "bloqueado_carrito_y_tema_en_memoria": true
+  },
+  "carga_lenta_con_respaldo": true,
+  "fallback": {
+    "http404": {
+      "http": 404,
+      "catalogo_busqueda_carrito": true
+    },
+    "http500": {
+      "http": 500,
+      "catalogo_busqueda_carrito": true
+    },
+    "json-roto": {
+      "http": 200,
+      "catalogo_busqueda_carrito": true
+    },
+    "esquema": {
+      "http": 200,
+      "catalogo_busqueda_carrito": true
+    }
+  },
+  "sin_js": {
+    "productos": 12,
+    "precios": 12,
+    "controles": true,
+    "carrito": true,
+    "formulario": true,
+    "navegacion": "flex"
+  },
+  "rutas_http": {
+    "/": 200,
+    "/assets/fonts/inter-latin.woff2": 200,
+    "/assets/fonts/space-grotesk-latin.woff2": 200,
+    "/assets/img/editorial-craft.webp": 200,
+    "/assets/img/editorial-desk.webp": 200,
+    "/assets/img/favicon.svg": 200,
+    "/assets/img/hero-workspace.webp": 200,
+    "/assets/img/og-vertice.jpg": 200,
+    "/assets/img/prod-aura-anc.webp": 200,
+    "/assets/img/prod-charge-pad.webp": 200,
+    "/assets/img/prod-dock-studio.webp": 200,
+    "/assets/img/prod-ergo-pro.webp": 200,
+    "/assets/img/prod-glide-mini.webp": 200,
+    "/assets/img/prod-halo-bar.webp": 200,
+    "/assets/img/prod-link-7in1.webp": 200,
+    "/assets/img/prod-matte-xl.webp": 200,
+    "/assets/img/prod-mono-s1.webp": 200,
+    "/assets/img/prod-pulse-air.webp": 200,
+    "/assets/img/prod-rise-alloy.webp": 200,
+    "/assets/img/prod-tactile-75.webp": 200,
+    "/css/styles.css": 200,
+    "/data/productos.json": 200,
+    "/index.html": 200,
+    "/js/cart.js": 200,
+    "/js/data.js": 200,
+    "/js/main.js": 200,
+    "/js/storage.js": 200,
+    "/js/utils.js": 200
+  },
+  "imagenes_sha256": {
+    "assets/img/prod-aura-anc.webp": "cd40d97effc5e04157e582dec46ef8a96ef69ebdb8592db80ca30de8d4d304d5",
+    "assets/img/prod-pulse-air.webp": "48d8c7631e529c017ed1deed324410c6491d4d77a9ff0c3ef962cd83d182e2d5",
+    "assets/img/prod-mono-s1.webp": "73ec8fa489348c82f00c21b2d37b7b0bbf5a7770c31ae574e585a6620e2c1936",
+    "assets/img/prod-tactile-75.webp": "24d04c9a93798a6c438582d0d026b7da3b440f84ca66997ea3efd7f31a16ebd7",
+    "assets/img/prod-ergo-pro.webp": "2b43f85a1641e2c1e225b8f1c7e385f8952caa548149b0d4950e6027143ee3dd",
+    "assets/img/prod-glide-mini.webp": "1dbe5a0422b808d871f2b7809e7b19e8aced37e780d77f39bf4f0d1bdd3f3c4d",
+    "assets/img/prod-link-7in1.webp": "cb82b6a854b8874796645a9e5af4d1c1fce9c3cd637049203d2bfb3d5b0230c2",
+    "assets/img/prod-dock-studio.webp": "04d8acf7302a4c1ca6b99bd687e4be47c3ce5e4b3cdade95b5cf5e9079e5b9d0",
+    "assets/img/prod-charge-pad.webp": "26f8241d65e56b61a1633581f8415bc8044682efbc65130775011d1d24373e27",
+    "assets/img/prod-rise-alloy.webp": "6b8b448eab7880bca7cafce1737479c4253c81e444882545a605de79626e01c9",
+    "assets/img/prod-halo-bar.webp": "f95ec318c3e2b38ead6b804eab84544d4f3158c4c0ff2732e74d75d4c0f8c798",
+    "assets/img/prod-matte-xl.webp": "3df45c3fb2a7923a1510745d8da7bcde1e33aeb766092ddbe4a6245d25faba9d"
+  }
+}

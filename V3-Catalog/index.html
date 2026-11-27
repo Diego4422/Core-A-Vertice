@@ -1,0 +1,662 @@
+<!doctype html>
+<html lang="es-PE" class="scheme-light dark:scheme-dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VÉRTICE Technology | Más allá de lo esencial</title>
+  <meta name="description" content="VÉRTICE Technology, marca demostrativa de audio, periféricos, conectividad y accesorios para espacios de trabajo. Explora la colección y sus precios referenciales.">
+  <meta name="theme-color" content="#111315">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_PE">
+  <meta property="og:title" content="VÉRTICE Technology | Más allá de lo esencial">
+  <meta property="og:description" content="Herramientas de precisión industrial para tu espacio de trabajo. Una marca demostrativa de portafolio.">
+  <meta property="og:image" content="assets/img/og-vertice.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Composición de VÉRTICE Technology para presentar su colección de accesorios de escritorio">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <script>
+    (() => {
+      let theme;
+      try { theme = localStorage.getItem('vertice_theme_v1'); } catch {}
+      const dark = theme === 'dark' || (theme !== 'light' && matchMedia('(prefers-color-scheme: dark)').matches);
+      document.documentElement.classList.toggle('dark', dark);
+    })();
+  </script>
+  <link rel="preload" as="image" href="assets/img/hero-workspace.webp" fetchpriority="high">
+  <link rel="preload" as="font" href="assets/fonts/space-grotesk-latin.woff2" type="font/woff2" crossorigin>
+  <link rel="preload" as="font" href="assets/fonts/inter-latin.woff2" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/main.js" type="module"></script>
+</head>
+<body id="inicio" class="bg-white font-sans leading-relaxed text-graphite dark:bg-graphite dark:text-white">
+  <a class="fixed top-3 left-gutter z-30 -translate-y-[160%] rounded-sm bg-white px-4 py-2 text-graphite focus:translate-y-0" href="#contenido">Ir al contenido</a>
+
+  <header class="group sticky top-0 z-20 border-b border-border-dark bg-graphite data-[menu=static]:static" data-header data-menu="static" data-dark-surface>
+    <div class="mx-auto w-full max-w-[89rem] px-gutter flex min-h-18 flex-wrap items-center justify-between gap-x-3 py-2 lg:justify-start">
+      <a class="inline-flex min-h-11 shrink-0 items-center gap-2.5 text-white" href="#inicio" aria-label="VÉRTICE Technology, inicio">
+        <svg class="shrink-0 text-copper" width="34" height="34" viewBox="0 0 36 36" aria-hidden="true">
+          <path fill="currentColor" d="M2 6h8l8 18L26 6h8L18 34z"/>
+          <path fill="currentColor" d="M15 6h6l-3 7z"/>
+        </svg>
+        <span class="flex flex-col font-display text-[1.35rem] leading-none font-bold tracking-[0.06em]">VÉRTICE <span class="mt-1 font-sans text-[0.625rem] font-semibold tracking-[0.21em] text-titanium-light">TECHNOLOGY</span></span>
+      </a>
+      <div class="flex max-w-full flex-wrap items-center gap-2">
+        <button class="inline-flex size-11 cursor-pointer items-center justify-center rounded-sm border border-titanium text-titanium-light hover:border-titanium-light hover:text-white" type="button" aria-pressed="false" aria-label="Modo oscuro" title="Modo oscuro" data-theme-toggle hidden>
+          <svg class="size-5 dark:hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+            <path d="M20.5 15.5A9 9 0 0 1 8.5 3.5a9 9 0 1 0 12 12Z"/>
+          </svg>
+          <svg class="hidden size-5 dark:block" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"/>
+            <path d="M12 2v3m0 14v3M2 12h3m14 0h3M5 5l2 2m10 10 2 2M5 19l2-2M17 7l2-2"/>
+          </svg>
+        </button>
+        <button class="inline-flex min-h-11 min-w-11 cursor-pointer items-center justify-center gap-1.5 rounded-sm border border-titanium px-2 text-white hover:border-titanium-light" type="button" aria-label="Abrir carrito, 0 unidades" aria-controls="carrito-panel" aria-expanded="false" data-cart-trigger hidden>
+          <svg class="size-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+            <path d="M5 8h14l1 13H4L5 8Zm4 2V6a3 3 0 1 1 6 0v4"/>
+          </svg>
+          <span class="rounded-sm bg-copper px-1.5 py-0.5 text-xs font-semibold text-graphite tabular-nums" data-cart-count aria-hidden="true">0</span>
+        </button>
+        <span class="sr-only" aria-live="polite" aria-atomic="true" data-cart-announcement></span>
+        <button class="inline-flex min-h-11 cursor-pointer items-center gap-1.5 rounded-sm border border-titanium px-2.5 text-sm text-white max-sm:size-11 max-sm:justify-center max-sm:px-0 lg:hidden" type="button" aria-controls="navegacion" aria-expanded="false" data-menu-toggle hidden>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+            <path d="M3 6h18M3 12h18M3 18h18"/>
+          </svg>
+          <span class="max-sm:sr-only">Menú</span>
+        </button>
+      </div>
+      <nav class="flex w-full flex-wrap items-center gap-x-4 gap-y-1 pt-2 pb-1 text-sm max-lg:group-data-[menu=closed]:hidden max-lg:group-data-[menu=open]:max-h-[60dvh] max-lg:group-data-[menu=open]:overflow-auto lg:min-w-0 lg:flex-1 lg:justify-end lg:gap-x-5 lg:py-0 xl:gap-x-7" id="navegacion" aria-label="Navegación principal">
+        <a class="inline-flex min-h-11 items-center text-titanium-light hover:text-white hover:underline underline-offset-4" href="#catalogo">Catálogo</a>
+        <a class="inline-flex min-h-11 items-center text-titanium-light hover:text-white hover:underline underline-offset-4" href="#colecciones">Colecciones</a>
+        <a class="inline-flex min-h-11 items-center text-titanium-light hover:text-white hover:underline underline-offset-4" href="#ecosistema">Ecosistema</a>
+        <a class="inline-flex min-h-11 items-center text-titanium-light hover:text-white hover:underline underline-offset-4" href="#marca">Marca</a>
+        <a class="inline-flex min-h-11 items-center text-titanium-light hover:text-white hover:underline underline-offset-4" href="#contacto">Contacto</a>
+        <a class="inline-flex min-h-12 cursor-pointer items-center justify-center rounded-sm bg-copper px-5 py-2.5 text-center text-[0.9375rem] leading-tight font-semibold text-graphite hover:bg-copper-hover" href="#contacto">Cotizar</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido" class="wrap-anywhere" tabindex="-1" data-focus-destination>
+    <section class="bg-graphite py-[clamp(2.5rem,5.2vw,4.75rem)] text-white" data-dark-surface aria-labelledby="hero-titulo">
+      <div class="mx-auto w-full max-w-[89rem] px-gutter grid items-center gap-[clamp(1.75rem,5vw,4.75rem)] lg:grid-cols-[minmax(0,55fr)_minmax(0,45fr)]">
+        <div class="min-w-0">
+          <p class="text-sm font-semibold tracking-[0.12em] text-copper">VÉRTICE TECHNOLOGY · SERIE 01</p>
+          <h1 id="hero-titulo" class="mt-4 mb-5 text-[clamp(3rem,7.8vw,7rem)] leading-[0.94] tracking-[-0.072em]">Más allá de<br>lo esencial.</h1>
+          <p class="max-w-[29rem] text-[clamp(1rem,1.55vw,1.125rem)] text-titanium-light">Eleva tu forma de trabajar con herramientas de precisión industrial diseñadas para concentrarte, crear y producir sin fricción.</p>
+          <div class="mt-7 flex flex-wrap gap-2.5">
+            <a class="inline-flex min-h-12 cursor-pointer items-center justify-center rounded-sm bg-copper px-5 py-2.5 text-center text-[0.9375rem] leading-tight font-semibold text-graphite hover:bg-copper-hover" href="#catalogo">Explorar colección</a>
+            <a class="inline-flex min-h-12 items-center justify-center rounded-sm border border-titanium-light px-5 py-2.5 text-center text-[0.9375rem] leading-tight font-semibold text-white hover:border-white" href="#contacto">Solicitar cotización</a>
+          </div>
+        </div>
+        <img class="aspect-[4/3] w-full rounded-sm object-contain" src="assets/img/hero-workspace.webp" width="1200" height="900" fetchpriority="high" alt="Escritorio con monitor, barra de luz, teclado, auriculares y estación de conexión en acabado grafito">
+      </div>
+    </section>
+
+    <section class="bg-ivory py-section dark:bg-graphite" id="catalogo" tabindex="-1" data-focus-destination aria-labelledby="catalogo-titulo">
+      <div class="mx-auto w-full max-w-[89rem] px-gutter">
+        <div class="mb-8 max-w-[46rem]">
+          <p class="mb-3 text-sm font-semibold tracking-[0.12em] text-copper-text dark:text-copper">COLECCIÓN · SERIE 01</p>
+          <h2 id="catalogo-titulo">Encuentra tu próximo esencial.</h2>
+          <p class="mt-4 text-titanium dark:text-titanium-light">Compara las especificaciones de los 12 productos. Los precios en soles (S/) son referenciales.</p>
+        </div>
+        <div class="mb-3 grid gap-4 rounded-lg border border-border-light bg-white p-4 dark:border-border-dark dark:bg-surface-dark sm:p-5 xl:grid-cols-[minmax(17rem,1fr)_minmax(0,auto)] xl:items-center" data-catalog-controls hidden>
+          <div>
+            <label class="sr-only" for="buscar-productos">Buscar productos</label>
+            <div class="flex flex-wrap items-center gap-2">
+              <div class="relative min-w-[min(100%,10rem)] flex-1">
+                <svg class="pointer-events-none absolute top-1/2 left-3 size-5 -translate-y-1/2 text-titanium dark:text-titanium-light" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+                <circle cx="10.5" cy="10.5" r="6.5"/>
+                <path d="m16 16 4 4"/>
+              </svg>
+                <input class="form-input min-h-12 w-full min-w-0 rounded-sm border border-titanium bg-white py-2 pr-3 pl-10 text-base text-graphite placeholder:text-titanium focus:ring-0 dark:border-titanium-light dark:bg-graphite dark:text-white dark:placeholder:text-titanium-light [&::-webkit-search-cancel-button]:hidden" id="buscar-productos" type="search" autocomplete="off" placeholder="Buscar productos…">
+              </div>
+              <button class="cursor-pointer rounded-sm border border-titanium bg-white text-graphite hover:border-graphite dark:border-titanium-light dark:bg-graphite dark:text-white dark:hover:border-white min-h-11 px-3 text-sm font-semibold" type="button" data-clear-search hidden>Limpiar</button>
+            </div>
+          </div>
+          <div class="flex flex-wrap gap-2" role="group" aria-label="Filtrar por categoría" data-filters>
+              <button class="cursor-pointer rounded-sm border border-titanium bg-white text-graphite hover:border-graphite dark:border-titanium-light dark:bg-graphite dark:text-white dark:hover:border-white min-h-11 px-3 py-1.5 text-sm font-semibold aria-pressed:border-graphite aria-pressed:bg-copper aria-pressed:text-graphite dark:aria-pressed:border-copper dark:aria-pressed:bg-copper dark:aria-pressed:text-graphite" type="button" data-category="Todos" aria-pressed="true">Todos</button>
+              <button class="cursor-pointer rounded-sm border border-titanium bg-white text-graphite hover:border-graphite dark:border-titanium-light dark:bg-graphite dark:text-white dark:hover:border-white min-h-11 px-3 py-1.5 text-sm font-semibold aria-pressed:border-graphite aria-pressed:bg-copper aria-pressed:text-graphite dark:aria-pressed:border-copper dark:aria-pressed:bg-copper dark:aria-pressed:text-graphite" type="button" data-category="Audio" aria-pressed="false">Audio</button>
+              <button class="cursor-pointer rounded-sm border border-titanium bg-white text-graphite hover:border-graphite dark:border-titanium-light dark:bg-graphite dark:text-white dark:hover:border-white min-h-11 px-3 py-1.5 text-sm font-semibold aria-pressed:border-graphite aria-pressed:bg-copper aria-pressed:text-graphite dark:aria-pressed:border-copper dark:aria-pressed:bg-copper dark:aria-pressed:text-graphite" type="button" data-category="Periféricos" aria-pressed="false">Periféricos</button>
+              <button class="cursor-pointer rounded-sm border border-titanium bg-white text-graphite hover:border-graphite dark:border-titanium-light dark:bg-graphite dark:text-white dark:hover:border-white min-h-11 px-3 py-1.5 text-sm font-semibold aria-pressed:border-graphite aria-pressed:bg-copper aria-pressed:text-graphite dark:aria-pressed:border-copper dark:aria-pressed:bg-copper dark:aria-pressed:text-graphite" type="button" data-category="Conectividad" aria-pressed="false">Conectividad</button>
+              <button class="cursor-pointer rounded-sm border border-titanium bg-white text-graphite hover:border-graphite dark:border-titanium-light dark:bg-graphite dark:text-white dark:hover:border-white min-h-11 px-3 py-1.5 text-sm font-semibold aria-pressed:border-graphite aria-pressed:bg-copper aria-pressed:text-graphite dark:aria-pressed:border-copper dark:aria-pressed:bg-copper dark:aria-pressed:text-graphite" type="button" data-category="Workspace" aria-pressed="false">Workspace</button>
+          </div>
+        </div>
+        <div class="mb-5 space-y-2 text-sm text-titanium dark:text-titanium-light">
+          <p role="status" data-catalog-status></p>
+          <p role="status" data-result-count></p>
+          <noscript><p>Puedes consultar los productos y sus precios. Para usar la búsqueda, los filtros y el carrito, activa JavaScript y abre la página por HTTP.</p></noscript>
+        </div>
+        <div class="rounded-lg border border-border-light bg-white p-5 dark:border-border-dark dark:bg-surface-dark" data-empty-results hidden>
+          <p class="mb-3">No encontramos productos para tu búsqueda.</p>
+          <button class="cursor-pointer rounded-sm border border-titanium bg-white text-graphite hover:border-graphite dark:border-titanium-light dark:bg-graphite dark:text-white dark:hover:border-white min-h-11 px-3 text-sm font-semibold" type="button" data-reset-filters>Restablecer filtros</button>
+        </div>
+        <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4" data-product-grid>
+          <!-- CATALOG:START -->
+          <article class="group/product flex min-w-0 flex-col overflow-hidden rounded-lg border border-border-light bg-white dark:border-border-dark dark:bg-surface-dark" data-product="{&quot;id&quot;:&quot;vt-aud-01&quot;,&quot;name&quot;:&quot;VÉRTICE Aura ANC&quot;,&quot;category&quot;:&quot;Audio&quot;,&quot;priceCents&quot;:89900,&quot;shortDescription&quot;:&quot;Auriculares inalámbricos over-ear con cancelación activa de ruido y chasis de aluminio anodizado.&quot;,&quot;specs&quot;:[&quot;Cancelación activa híbrida&quot;,&quot;Hasta 40 h de uso&quot;,&quot;Carga USB-C&quot;],&quot;image&quot;:&quot;assets/img/prod-aura-anc.webp&quot;,&quot;alt&quot;:&quot;Auriculares de diadema grafito con acabado metálico sobre fondo claro&quot;,&quot;searchTags&quot;:[&quot;auriculares&quot;,&quot;audífonos&quot;,&quot;anc&quot;,&quot;bluetooth&quot;,&quot;over-ear&quot;]}">
+            <div class="overflow-hidden">
+              <img class="aspect-square w-full object-contain transition-transform duration-200 motion-safe:group-hover/product:scale-[1.025] motion-reduce:transition-none" src="assets/img/prod-aura-anc.webp" width="800" height="800" loading="lazy" decoding="async" alt="Auriculares de diadema grafito con acabado metálico sobre fondo claro">
+            </div>
+            <div class="flex flex-1 flex-col p-4 sm:p-5">
+              <p class="mb-2 text-sm font-semibold text-copper-text dark:text-copper" data-product-category>Audio</p>
+              <h3 class="text-xl xl:text-[1.35rem]" data-product-name>VÉRTICE Aura ANC</h3>
+              <p class="mt-2.5 text-sm text-titanium dark:text-titanium-light" data-product-description>Auriculares inalámbricos over-ear con cancelación activa de ruido y chasis de aluminio anodizado.</p>
+              <ul class="mt-4 space-y-1.5 border-t border-border-light pt-3 text-sm text-titanium dark:border-border-dark dark:text-titanium-light" data-product-specs>
+                <li>Cancelación activa híbrida</li>
+                <li>Hasta 40 h de uso</li>
+                <li>Carga USB-C</li>
+              </ul>
+              <div class="mt-auto pt-5">
+                <p class="font-display text-2xl font-bold tabular-nums" data-product-price>S/ 899.00</p>
+                <button class="mt-3 min-h-12 w-full cursor-pointer rounded-sm bg-copper px-3 py-2 text-sm font-semibold text-graphite hover:bg-copper-hover" type="button" aria-label="Añadir al carrito: VÉRTICE Aura ANC" data-add="vt-aud-01" hidden>Añadir al carrito</button>
+              </div>
+            </div>
+          </article>
+          <article class="group/product flex min-w-0 flex-col overflow-hidden rounded-lg border border-border-light bg-white dark:border-border-dark dark:bg-surface-dark" data-product="{&quot;id&quot;:&quot;vt-aud-02&quot;,&quot;name&quot;:&quot;VÉRTICE Pulse Air&quot;,&quot;category&quot;:&quot;Audio&quot;,&quot;priceCents&quot;:54900,&quot;shortDescription&quot;:&quot;Earbuds inalámbricos ultraligeros con estuche compacto de acabado mate y micrófonos direccionales.&quot;,&quot;specs&quot;:[&quot;Perfil acústico balanceado&quot;,&quot;Estuche de carga rápida&quot;,&quot;Controles táctiles&quot;],&quot;image&quot;:&quot;assets/img/prod-pulse-air.webp&quot;,&quot;alt&quot;:&quot;Dos auriculares grafito junto a su estuche de carga abierto, sobre fondo claro&quot;,&quot;searchTags&quot;:[&quot;earbuds&quot;,&quot;in-ear&quot;,&quot;inalámbricos&quot;,&quot;bluetooth&quot;]}">
+            <div class="overflow-hidden">
+              <img class="aspect-square w-full object-contain transition-transform duration-200 motion-safe:group-hover/product:scale-[1.025] motion-reduce:transition-none" src="assets/img/prod-pulse-air.webp" width="800" height="800" loading="lazy" decoding="async" alt="Dos auriculares grafito junto a su estuche de carga abierto, sobre fondo claro">
+            </div>
+            <div class="flex flex-1 flex-col p-4 sm:p-5">
+              <p class="mb-2 text-sm font-semibold text-copper-text dark:text-copper" data-product-category>Audio</p>
+              <h3 class="text-xl xl:text-[1.35rem]" data-product-name>VÉRTICE Pulse Air</h3>
+              <p class="mt-2.5 text-sm text-titanium dark:text-titanium-light" data-product-description>Earbuds inalámbricos ultraligeros con estuche compacto de acabado mate y micrófonos direccionales.</p>
+              <ul class="mt-4 space-y-1.5 border-t border-border-light pt-3 text-sm text-titanium dark:border-border-dark dark:text-titanium-light" data-product-specs>
+                <li>Perfil acústico balanceado</li>
+                <li>Estuche de carga rápida</li>
+                <li>Controles táctiles</li>
+              </ul>
+              <div class="mt-auto pt-5">
+                <p class="font-display text-2xl font-bold tabular-nums" data-product-price>S/ 549.00</p>
+                <button class="mt-3 min-h-12 w-full cursor-pointer rounded-sm bg-copper px-3 py-2 text-sm font-semibold text-graphite hover:bg-copper-hover" type="button" aria-label="Añadir al carrito: VÉRTICE Pulse Air" data-add="vt-aud-02" hidden>Añadir al carrito</button>
+              </div>
+            </div>
+          </article>
+          <article class="group/product flex min-w-0 flex-col overflow-hidden rounded-lg border border-border-light bg-white dark:border-border-dark dark:bg-surface-dark" data-product="{&quot;id&quot;:&quot;vt-aud-03&quot;,&quot;name&quot;:&quot;VÉRTICE Mono S1&quot;,&quot;category&quot;:&quot;Audio&quot;,&quot;priceCents&quot;:39900,&quot;shortDescription&quot;:&quot;Altavoz portátil con acabado textil acústico y cuerpo compacto de polímero mate.&quot;,&quot;specs&quot;:[&quot;Bluetooth 5.3&quot;,&quot;Hasta 18 h de batería&quot;,&quot;Entrada USB-C&quot;],&quot;image&quot;:&quot;assets/img/prod-mono-s1.webp&quot;,&quot;alt&quot;:&quot;Altavoz rectangular compacto con frente textil oscuro, borde cobrizo y correa lateral&quot;,&quot;searchTags&quot;:[&quot;altavoz&quot;,&quot;parlante&quot;,&quot;speaker&quot;,&quot;portátil&quot;]}">
+            <div class="overflow-hidden">
+              <img class="aspect-square w-full object-contain transition-transform duration-200 motion-safe:group-hover/product:scale-[1.025] motion-reduce:transition-none" src="assets/img/prod-mono-s1.webp" width="800" height="800" loading="lazy" decoding="async" alt="Altavoz rectangular compacto con frente textil oscuro, borde cobrizo y correa lateral">
+            </div>
+            <div class="flex flex-1 flex-col p-4 sm:p-5">
+              <p class="mb-2 text-sm font-semibold text-copper-text dark:text-copper" data-product-category>Audio</p>
+              <h3 class="text-xl xl:text-[1.35rem]" data-product-name>VÉRTICE Mono S1</h3>
+              <p class="mt-2.5 text-sm text-titanium dark:text-titanium-light" data-product-description>Altavoz portátil con acabado textil acústico y cuerpo compacto de polímero mate.</p>
+              <ul class="mt-4 space-y-1.5 border-t border-border-light pt-3 text-sm text-titanium dark:border-border-dark dark:text-titanium-light" data-product-specs>
+                <li>Bluetooth 5.3</li>
+                <li>Hasta 18 h de batería</li>
+                <li>Entrada USB-C</li>
+              </ul>
+              <div class="mt-auto pt-5">
+                <p class="font-display text-2xl font-bold tabular-nums" data-product-price>S/ 399.00</p>
+                <button class="mt-3 min-h-12 w-full cursor-pointer rounded-sm bg-copper px-3 py-2 text-sm font-semibold text-graphite hover:bg-copper-hover" type="button" aria-label="Añadir al carrito: VÉRTICE Mono S1" data-add="vt-aud-03" hidden>Añadir al carrito</button>
+              </div>
+            </div>
+          </article>
+          <article class="group/product flex min-w-0 flex-col overflow-hidden rounded-lg border border-border-light bg-white dark:border-border-dark dark:bg-surface-dark" data-product="{&quot;id&quot;:&quot;vt-per-01&quot;,&quot;name&quot;:&quot;VÉRTICE Tactile 75&quot;,&quot;category&quot;:&quot;Periféricos&quot;,&quot;priceCents&quot;:48900,&quot;shortDescription&quot;:&quot;Teclado mecánico compacto al 75% con estructura de aluminio, switches táctiles silenciosos y perilla metálica.&quot;,&quot;specs&quot;:[&quot;Distribución al 75 %&quot;,&quot;Switches táctiles lubricados&quot;,&quot;USB-C, 2.4G y Bluetooth&quot;],&quot;image&quot;:&quot;assets/img/prod-tactile-75.webp&quot;,&quot;alt&quot;:&quot;Teclado compacto grafito con una perilla metálica sobre fondo claro&quot;,&quot;searchTags&quot;:[&quot;teclado&quot;,&quot;mecánico&quot;,&quot;switches&quot;,&quot;teclas&quot;]}">
+            <div class="overflow-hidden">
+              <img class="aspect-square w-full object-contain transition-transform duration-200 motion-safe:group-hover/product:scale-[1.025] motion-reduce:transition-none" src="assets/img/prod-tactile-75.webp" width="800" height="800" loading="lazy" decoding="async" alt="Teclado compacto grafito con una perilla metálica sobre fondo claro">
+            </div>
+            <div class="flex flex-1 flex-col p-4 sm:p-5">
+              <p class="mb-2 text-sm font-semibold text-copper-text dark:text-copper" data-product-category>Periféricos</p>
+              <h3 class="text-xl xl:text-[1.35rem]" data-product-name>VÉRTICE Tactile 75</h3>
+              <p class="mt-2.5 text-sm text-titanium dark:text-titanium-light" data-product-description>Teclado mecánico compacto al 75% con estructura de aluminio, switches táctiles silenciosos y perilla metálica.</p>
+              <ul class="mt-4 space-y-1.5 border-t border-border-light pt-3 text-sm text-titanium dark:border-border-dark dark:text-titanium-light" data-product-specs>
+                <li>Distribución al 75 %</li>
+                <li>Switches táctiles lubricados</li>
+                <li>USB-C, 2.4G y Bluetooth</li>
+              </ul>
+              <div class="mt-auto pt-5">
+                <p class="font-display text-2xl font-bold tabular-nums" data-product-price>S/ 489.00</p>
+                <button class="mt-3 min-h-12 w-full cursor-pointer rounded-sm bg-copper px-3 py-2 text-sm font-semibold text-graphite hover:bg-copper-hover" type="button" aria-label="Añadir al carrito: VÉRTICE Tactile 75" data-add="vt-per-01" hidden>Añadir al carrito</button>
+              </div>
+            </div>
+          </article>
+          <article class="group/product flex min-w-0 flex-col overflow-hidden rounded-lg border border-border-light bg-white dark:border-border-dark dark:bg-surface-dark" data-product="{&quot;id&quot;:&quot;vt-per-02&quot;,&quot;name&quot;:&quot;VÉRTICE Ergo Pro&quot;,&quot;category&quot;:&quot;Periféricos&quot;,&quot;priceCents&quot;:32900,&quot;shortDescription&quot;:&quot;Ratón ergonómico esculpido para jornadas prolongadas con rueda electromagnética de alta precisión.&quot;,&quot;specs&quot;:[&quot;Sensor óptico de 8000 DPI&quot;,&quot;Rueda de desplazamiento dual&quot;,&quot;Carga USB-C&quot;],&quot;image&quot;:&quot;assets/img/prod-ergo-pro.webp&quot;,&quot;alt&quot;:&quot;Ratón grafito de perfil inclinado con apoyo lateral y rueda oscura, sobre fondo claro&quot;,&quot;searchTags&quot;:[&quot;ratón&quot;,&quot;mouse&quot;,&quot;ergonómico&quot;,&quot;inalámbrico&quot;]}">
+            <div class="overflow-hidden">
+              <img class="aspect-square w-full object-contain transition-transform duration-200 motion-safe:group-hover/product:scale-[1.025] motion-reduce:transition-none" src="assets/img/prod-ergo-pro.webp" width="800" height="800" loading="lazy" decoding="async" alt="Ratón grafito de perfil inclinado con apoyo lateral y rueda oscura, sobre fondo claro">
+            </div>
+            <div class="flex flex-1 flex-col p-4 sm:p-5">
+              <p class="mb-2 text-sm font-semibold text-copper-text dark:text-copper" data-product-category>Periféricos</p>
+              <h3 class="text-xl xl:text-[1.35rem]" data-product-name>VÉRTICE Ergo Pro</h3>
+              <p class="mt-2.5 text-sm text-titanium dark:text-titanium-light" data-product-description>Ratón ergonómico esculpido para jornadas prolongadas con rueda electromagnética de alta precisión.</p>
+              <ul class="mt-4 space-y-1.5 border-t border-border-light pt-3 text-sm text-titanium dark:border-border-dark dark:text-titanium-light" data-product-specs>
+                <li>Sensor óptico de 8000 DPI</li>
+                <li>Rueda de desplazamiento dual</li>
+                <li>Carga USB-C</li>
+              </ul>
+              <div class="mt-auto pt-5">
+                <p class="font-display text-2xl font-bold tabular-nums" data-product-price>S/ 329.00</p>
+                <button class="mt-3 min-h-12 w-full cursor-pointer rounded-sm bg-copper px-3 py-2 text-sm font-semibold text-graphite hover:bg-copper-hover" type="button" aria-label="Añadir al carrito: VÉRTICE Ergo Pro" data-add="vt-per-02" hidden>Añadir al carrito</button>
+              </div>
+            </div>
+          </article>
+          <article class="group/product flex min-w-0 flex-col overflow-hidden rounded-lg border border-border-light bg-white dark:border-border-dark dark:bg-surface-dark" data-product="{&quot;id&quot;:&quot;vt-per-03&quot;,&quot;name&quot;:&quot;VÉRTICE Glide Mini&quot;,&quot;category&quot;:&quot;Periféricos&quot;,&quot;priceCents&quot;:21900,&quot;shortDescription&quot;:&quot;Ratón compacto de perfil bajo diseñado para movilidad, trabajo híbrido y escritorios minimalistas.&quot;,&quot;specs&quot;:[&quot;Peso de 68 g&quot;,&quot;Clics silenciosos&quot;,&quot;Bluetooth y receptor USB-C&quot;],&quot;image&quot;:&quot;assets/img/prod-glide-mini.webp&quot;,&quot;alt&quot;:&quot;Ratón compacto grafito con rueda y borde cobrizos sobre una superficie oscura&quot;,&quot;searchTags&quot;:[&quot;ratón&quot;,&quot;mouse&quot;,&quot;compacto&quot;,&quot;portátil&quot;,&quot;silencioso&quot;]}">
+            <div class="overflow-hidden">
+              <img class="aspect-square w-full object-contain transition-transform duration-200 motion-safe:group-hover/product:scale-[1.025] motion-reduce:transition-none" src="assets/img/prod-glide-mini.webp" width="800" height="800" loading="lazy" decoding="async" alt="Ratón compacto grafito con rueda y borde cobrizos sobre una superficie oscura">
+            </div>
+            <div class="flex flex-1 flex-col p-4 sm:p-5">
+              <p class="mb-2 text-sm font-semibold text-copper-text dark:text-copper" data-product-category>Periféricos</p>
+              <h3 class="text-xl xl:text-[1.35rem]" data-product-name>VÉRTICE Glide Mini</h3>
+              <p class="mt-2.5 text-sm text-titanium dark:text-titanium-light" data-product-description>Ratón compacto de perfil bajo diseñado para movilidad, trabajo híbrido y escritorios minimalistas.</p>
+              <ul class="mt-4 space-y-1.5 border-t border-border-light pt-3 text-sm text-titanium dark:border-border-dark dark:text-titanium-light" data-product-specs>
+                <li>Peso de 68 g</li>
+                <li>Clics silenciosos</li>
+                <li>Bluetooth y receptor USB-C</li>
+              </ul>
+              <div class="mt-auto pt-5">
+                <p class="font-display text-2xl font-bold tabular-nums" data-product-price>S/ 219.00</p>
+                <button class="mt-3 min-h-12 w-full cursor-pointer rounded-sm bg-copper px-3 py-2 text-sm font-semibold text-graphite hover:bg-copper-hover" type="button" aria-label="Añadir al carrito: VÉRTICE Glide Mini" data-add="vt-per-03" hidden>Añadir al carrito</button>
+              </div>
+            </div>
+          </article>
+          <article class="group/product flex min-w-0 flex-col overflow-hidden rounded-lg border border-border-light bg-white dark:border-border-dark dark:bg-surface-dark" data-product="{&quot;id&quot;:&quot;vt-con-01&quot;,&quot;name&quot;:&quot;VÉRTICE Link 7-in-1&quot;,&quot;category&quot;:&quot;Conectividad&quot;,&quot;priceCents&quot;:18900,&quot;shortDescription&quot;:&quot;Hub USB-C en aluminio fresado que amplía tu portátil con video 4K, lectura de tarjetas y carga directa.&quot;,&quot;specs&quot;:[&quot;HDMI 4K a 60 Hz&quot;,&quot;Lector SD y microSD&quot;,&quot;Power Delivery de 100 W&quot;],&quot;image&quot;:&quot;assets/img/prod-link-7in1.webp&quot;,&quot;alt&quot;:&quot;Hub grafito con puertos frontales y laterales, borde cobrizo y cable USB-C corto&quot;,&quot;searchTags&quot;:[&quot;hub&quot;,&quot;usb-c&quot;,&quot;adaptador&quot;,&quot;hdmi&quot;,&quot;sd&quot;]}">
+            <div class="overflow-hidden">
+              <img class="aspect-square w-full object-contain transition-transform duration-200 motion-safe:group-hover/product:scale-[1.025] motion-reduce:transition-none" src="assets/img/prod-link-7in1.webp" width="800" height="800" loading="lazy" decoding="async" alt="Hub grafito con puertos frontales y laterales, borde cobrizo y cable USB-C corto">
+            </div>
+            <div class="flex flex-1 flex-col p-4 sm:p-5">
+              <p class="mb-2 text-sm font-semibold text-copper-text dark:text-copper" data-product-category>Conectividad</p>
+              <h3 class="text-xl xl:text-[1.35rem]" data-product-name>VÉRTICE Link 7-in-1</h3>
+              <p class="mt-2.5 text-sm text-titanium dark:text-titanium-light" data-product-description>Hub USB-C en aluminio fresado que amplía tu portátil con video 4K, lectura de tarjetas y carga directa.</p>
+              <ul class="mt-4 space-y-1.5 border-t border-border-light pt-3 text-sm text-titanium dark:border-border-dark dark:text-titanium-light" data-product-specs>
+                <li>HDMI 4K a 60 Hz</li>
+                <li>Lector SD y microSD</li>
+                <li>Power Delivery de 100 W</li>
+              </ul>
+              <div class="mt-auto pt-5">
+                <p class="font-display text-2xl font-bold tabular-nums" data-product-price>S/ 189.00</p>
+                <button class="mt-3 min-h-12 w-full cursor-pointer rounded-sm bg-copper px-3 py-2 text-sm font-semibold text-graphite hover:bg-copper-hover" type="button" aria-label="Añadir al carrito: VÉRTICE Link 7-in-1" data-add="vt-con-01" hidden>Añadir al carrito</button>
+              </div>
+            </div>
+          </article>
+          <article class="group/product flex min-w-0 flex-col overflow-hidden rounded-lg border border-border-light bg-white dark:border-border-dark dark:bg-surface-dark" data-product="{&quot;id&quot;:&quot;vt-con-02&quot;,&quot;name&quot;:&quot;VÉRTICE Dock Studio&quot;,&quot;category&quot;:&quot;Conectividad&quot;,&quot;priceCents&quot;:59900,&quot;shortDescription&quot;:&quot;Estación de conexión de escritorio de un solo cable para configuraciones de doble monitor y red cableada.&quot;,&quot;specs&quot;:[&quot;Doble salida 4K&quot;,&quot;Ethernet Gigabit&quot;,&quot;Entrega de energía de 96 W&quot;],&quot;image&quot;:&quot;assets/img/prod-dock-studio.webp&quot;,&quot;alt&quot;:&quot;Estación de conexión con puertos frontales sobre un escritorio junto a una pantalla&quot;,&quot;searchTags&quot;:[&quot;dock&quot;,&quot;estación&quot;,&quot;hub&quot;,&quot;escritorio&quot;,&quot;monitores&quot;]}">
+            <div class="overflow-hidden">
+              <img class="aspect-square w-full object-contain transition-transform duration-200 motion-safe:group-hover/product:scale-[1.025] motion-reduce:transition-none" src="assets/img/prod-dock-studio.webp" width="800" height="800" loading="lazy" decoding="async" alt="Estación de conexión con puertos frontales sobre un escritorio junto a una pantalla">
+            </div>
+            <div class="flex flex-1 flex-col p-4 sm:p-5">
+              <p class="mb-2 text-sm font-semibold text-copper-text dark:text-copper" data-product-category>Conectividad</p>
+              <h3 class="text-xl xl:text-[1.35rem]" data-product-name>VÉRTICE Dock Studio</h3>
+              <p class="mt-2.5 text-sm text-titanium dark:text-titanium-light" data-product-description>Estación de conexión de escritorio de un solo cable para configuraciones de doble monitor y red cableada.</p>
+              <ul class="mt-4 space-y-1.5 border-t border-border-light pt-3 text-sm text-titanium dark:border-border-dark dark:text-titanium-light" data-product-specs>
+                <li>Doble salida 4K</li>
+                <li>Ethernet Gigabit</li>
+                <li>Entrega de energía de 96 W</li>
+              </ul>
+              <div class="mt-auto pt-5">
+                <p class="font-display text-2xl font-bold tabular-nums" data-product-price>S/ 599.00</p>
+                <button class="mt-3 min-h-12 w-full cursor-pointer rounded-sm bg-copper px-3 py-2 text-sm font-semibold text-graphite hover:bg-copper-hover" type="button" aria-label="Añadir al carrito: VÉRTICE Dock Studio" data-add="vt-con-02" hidden>Añadir al carrito</button>
+              </div>
+            </div>
+          </article>
+          <article class="group/product flex min-w-0 flex-col overflow-hidden rounded-lg border border-border-light bg-white dark:border-border-dark dark:bg-surface-dark" data-product="{&quot;id&quot;:&quot;vt-con-03&quot;,&quot;name&quot;:&quot;VÉRTICE Charge Pad&quot;,&quot;category&quot;:&quot;Conectividad&quot;,&quot;priceCents&quot;:24900,&quot;shortDescription&quot;:&quot;Base de carga inalámbrica individual con cuerpo ponderado y superficie antideslizante.&quot;,&quot;specs&quot;:[&quot;Carga magnética de 15 W&quot;,&quot;Indicador LED discreto&quot;,&quot;Protección térmica&quot;],&quot;image&quot;:&quot;assets/img/prod-charge-pad.webp&quot;,&quot;alt&quot;:&quot;Base circular grafito con un símbolo de carga al centro, borde cobrizo y cable&quot;,&quot;searchTags&quot;:[&quot;cargador&quot;,&quot;inalámbrico&quot;,&quot;magnético&quot;,&quot;qi&quot;,&quot;carga&quot;]}">
+            <div class="overflow-hidden">
+              <img class="aspect-square w-full object-contain transition-transform duration-200 motion-safe:group-hover/product:scale-[1.025] motion-reduce:transition-none" src="assets/img/prod-charge-pad.webp" width="800" height="800" loading="lazy" decoding="async" alt="Base circular grafito con un símbolo de carga al centro, borde cobrizo y cable">
+            </div>
+            <div class="flex flex-1 flex-col p-4 sm:p-5">
+              <p class="mb-2 text-sm font-semibold text-copper-text dark:text-copper" data-product-category>Conectividad</p>
+              <h3 class="text-xl xl:text-[1.35rem]" data-product-name>VÉRTICE Charge Pad</h3>
+              <p class="mt-2.5 text-sm text-titanium dark:text-titanium-light" data-product-description>Base de carga inalámbrica individual con cuerpo ponderado y superficie antideslizante.</p>
+              <ul class="mt-4 space-y-1.5 border-t border-border-light pt-3 text-sm text-titanium dark:border-border-dark dark:text-titanium-light" data-product-specs>
+                <li>Carga magnética de 15 W</li>
+                <li>Indicador LED discreto</li>
+                <li>Protección térmica</li>
+              </ul>
+              <div class="mt-auto pt-5">
+                <p class="font-display text-2xl font-bold tabular-nums" data-product-price>S/ 249.00</p>
+                <button class="mt-3 min-h-12 w-full cursor-pointer rounded-sm bg-copper px-3 py-2 text-sm font-semibold text-graphite hover:bg-copper-hover" type="button" aria-label="Añadir al carrito: VÉRTICE Charge Pad" data-add="vt-con-03" hidden>Añadir al carrito</button>
+              </div>
+            </div>
+          </article>
+          <article class="group/product flex min-w-0 flex-col overflow-hidden rounded-lg border border-border-light bg-white dark:border-border-dark dark:bg-surface-dark" data-product="{&quot;id&quot;:&quot;vt-wsp-01&quot;,&quot;name&quot;:&quot;VÉRTICE Rise Alloy&quot;,&quot;category&quot;:&quot;Workspace&quot;,&quot;priceCents&quot;:19900,&quot;shortDescription&quot;:&quot;Soporte para laptop en aluminio anodizado que eleva la pantalla a la altura visual y mejora la ventilación.&quot;,&quot;specs&quot;:[&quot;Compatible con 13 a 16 pulgadas&quot;,&quot;Almohadillas de silicona&quot;,&quot;Canal trasero para cables&quot;],&quot;image&quot;:&quot;assets/img/prod-rise-alloy.webp&quot;,&quot;alt&quot;:&quot;Soporte grafito inclinado con ranuras de ventilación y articulaciones cobrizas&quot;,&quot;searchTags&quot;:[&quot;soporte&quot;,&quot;stand&quot;,&quot;laptop&quot;,&quot;aluminio&quot;,&quot;escritorio&quot;]}">
+            <div class="overflow-hidden">
+              <img class="aspect-square w-full object-contain transition-transform duration-200 motion-safe:group-hover/product:scale-[1.025] motion-reduce:transition-none" src="assets/img/prod-rise-alloy.webp" width="800" height="800" loading="lazy" decoding="async" alt="Soporte grafito inclinado con ranuras de ventilación y articulaciones cobrizas">
+            </div>
+            <div class="flex flex-1 flex-col p-4 sm:p-5">
+              <p class="mb-2 text-sm font-semibold text-copper-text dark:text-copper" data-product-category>Workspace</p>
+              <h3 class="text-xl xl:text-[1.35rem]" data-product-name>VÉRTICE Rise Alloy</h3>
+              <p class="mt-2.5 text-sm text-titanium dark:text-titanium-light" data-product-description>Soporte para laptop en aluminio anodizado que eleva la pantalla a la altura visual y mejora la ventilación.</p>
+              <ul class="mt-4 space-y-1.5 border-t border-border-light pt-3 text-sm text-titanium dark:border-border-dark dark:text-titanium-light" data-product-specs>
+                <li>Compatible con 13 a 16 pulgadas</li>
+                <li>Almohadillas de silicona</li>
+                <li>Canal trasero para cables</li>
+              </ul>
+              <div class="mt-auto pt-5">
+                <p class="font-display text-2xl font-bold tabular-nums" data-product-price>S/ 199.00</p>
+                <button class="mt-3 min-h-12 w-full cursor-pointer rounded-sm bg-copper px-3 py-2 text-sm font-semibold text-graphite hover:bg-copper-hover" type="button" aria-label="Añadir al carrito: VÉRTICE Rise Alloy" data-add="vt-wsp-01" hidden>Añadir al carrito</button>
+              </div>
+            </div>
+          </article>
+          <article class="group/product flex min-w-0 flex-col overflow-hidden rounded-lg border border-border-light bg-white dark:border-border-dark dark:bg-surface-dark" data-product="{&quot;id&quot;:&quot;vt-wsp-02&quot;,&quot;name&quot;:&quot;VÉRTICE Halo Bar&quot;,&quot;category&quot;:&quot;Workspace&quot;,&quot;priceCents&quot;:27900,&quot;shortDescription&quot;:&quot;Lámpara asimétrica para monitor que ilumina el escritorio sin generar reflejos en la pantalla.&quot;,&quot;specs&quot;:[&quot;Óptica asimétrica antirreflejo&quot;,&quot;Temperatura de 2700 a 6500 K&quot;,&quot;Alimentación USB-C&quot;],&quot;image&quot;:&quot;assets/img/prod-halo-bar.webp&quot;,&quot;alt&quot;:&quot;Barra de luz cálida montada sobre un monitor, con un controlador circular en el escritorio&quot;,&quot;searchTags&quot;:[&quot;lámpara&quot;,&quot;luz&quot;,&quot;monitor&quot;,&quot;escritorio&quot;,&quot;iluminación&quot;]}">
+            <div class="overflow-hidden">
+              <img class="aspect-square w-full object-contain transition-transform duration-200 motion-safe:group-hover/product:scale-[1.025] motion-reduce:transition-none" src="assets/img/prod-halo-bar.webp" width="800" height="800" loading="lazy" decoding="async" alt="Barra de luz cálida montada sobre un monitor, con un controlador circular en el escritorio">
+            </div>
+            <div class="flex flex-1 flex-col p-4 sm:p-5">
+              <p class="mb-2 text-sm font-semibold text-copper-text dark:text-copper" data-product-category>Workspace</p>
+              <h3 class="text-xl xl:text-[1.35rem]" data-product-name>VÉRTICE Halo Bar</h3>
+              <p class="mt-2.5 text-sm text-titanium dark:text-titanium-light" data-product-description>Lámpara asimétrica para monitor que ilumina el escritorio sin generar reflejos en la pantalla.</p>
+              <ul class="mt-4 space-y-1.5 border-t border-border-light pt-3 text-sm text-titanium dark:border-border-dark dark:text-titanium-light" data-product-specs>
+                <li>Óptica asimétrica antirreflejo</li>
+                <li>Temperatura de 2700 a 6500 K</li>
+                <li>Alimentación USB-C</li>
+              </ul>
+              <div class="mt-auto pt-5">
+                <p class="font-display text-2xl font-bold tabular-nums" data-product-price>S/ 279.00</p>
+                <button class="mt-3 min-h-12 w-full cursor-pointer rounded-sm bg-copper px-3 py-2 text-sm font-semibold text-graphite hover:bg-copper-hover" type="button" aria-label="Añadir al carrito: VÉRTICE Halo Bar" data-add="vt-wsp-02" hidden>Añadir al carrito</button>
+              </div>
+            </div>
+          </article>
+          <article class="group/product flex min-w-0 flex-col overflow-hidden rounded-lg border border-border-light bg-white dark:border-border-dark dark:bg-surface-dark" data-product="{&quot;id&quot;:&quot;vt-wsp-03&quot;,&quot;name&quot;:&quot;VÉRTICE Matte XL&quot;,&quot;category&quot;:&quot;Workspace&quot;,&quot;priceCents&quot;:13900,&quot;shortDescription&quot;:&quot;Alfombrilla de escritorio de gran formato en fieltro técnico y cuero vegano con base antideslizante.&quot;,&quot;specs&quot;:[&quot;Dimensiones de 90 × 40 cm&quot;,&quot;Bordes sellados&quot;,&quot;Resistencia a salpicaduras&quot;],&quot;image&quot;:&quot;assets/img/prod-matte-xl.webp&quot;,&quot;alt&quot;:&quot;Alfombrilla grafito rectangular de borde cobrizo junto a una taza y una computadora&quot;,&quot;searchTags&quot;:[&quot;alfombrilla&quot;,&quot;deskmat&quot;,&quot;mousepad&quot;,&quot;escritorio&quot;]}">
+            <div class="overflow-hidden">
+              <img class="aspect-square w-full object-contain transition-transform duration-200 motion-safe:group-hover/product:scale-[1.025] motion-reduce:transition-none" src="assets/img/prod-matte-xl.webp" width="800" height="800" loading="lazy" decoding="async" alt="Alfombrilla grafito rectangular de borde cobrizo junto a una taza y una computadora">
+            </div>
+            <div class="flex flex-1 flex-col p-4 sm:p-5">
+              <p class="mb-2 text-sm font-semibold text-copper-text dark:text-copper" data-product-category>Workspace</p>
+              <h3 class="text-xl xl:text-[1.35rem]" data-product-name>VÉRTICE Matte XL</h3>
+              <p class="mt-2.5 text-sm text-titanium dark:text-titanium-light" data-product-description>Alfombrilla de escritorio de gran formato en fieltro técnico y cuero vegano con base antideslizante.</p>
+              <ul class="mt-4 space-y-1.5 border-t border-border-light pt-3 text-sm text-titanium dark:border-border-dark dark:text-titanium-light" data-product-specs>
+                <li>Dimensiones de 90 × 40 cm</li>
+                <li>Bordes sellados</li>
+                <li>Resistencia a salpicaduras</li>
+              </ul>
+              <div class="mt-auto pt-5">
+                <p class="font-display text-2xl font-bold tabular-nums" data-product-price>S/ 139.00</p>
+                <button class="mt-3 min-h-12 w-full cursor-pointer rounded-sm bg-copper px-3 py-2 text-sm font-semibold text-graphite hover:bg-copper-hover" type="button" aria-label="Añadir al carrito: VÉRTICE Matte XL" data-add="vt-wsp-03" hidden>Añadir al carrito</button>
+              </div>
+            </div>
+          </article>
+          <!-- CATALOG:END -->
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white py-section dark:bg-surface-dark" id="colecciones" tabindex="-1" data-focus-destination aria-labelledby="colecciones-titulo">
+      <div class="mx-auto w-full max-w-[89rem] px-gutter">
+        <div class="mb-[clamp(1.75rem,3.3vw,2.75rem)] flex flex-wrap items-baseline justify-between gap-x-8 gap-y-2.5">
+          <h2 id="colecciones-titulo">Cuatro pilares para tu espacio</h2>
+        </div>
+        <div class="grid gap-4 sm:grid-cols-2">
+          <article class="flex min-w-0 flex-col gap-3 rounded-md border border-border-light bg-ivory p-[clamp(1.1rem,2.6vw,2rem)] dark:border-border-dark dark:bg-graphite">
+            <svg class="shrink-0 text-copper-text dark:text-copper" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true">
+              <path d="M4 14v-2a8 8 0 0 1 16 0v2M4 13h3v7H5a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2m15 0h-3v7h2a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2"/>
+            </svg>
+            <div>
+              <h3>Audio</h3>
+              <p class="mt-2 text-titanium dark:text-titanium-light">Auriculares y altavoces para concentrarte y escuchar con claridad.</p>
+              <dl class="mt-4 border-t border-border-light text-sm dark:border-border-dark">
+                <div class="grid gap-0.5 border-b border-border-light py-2.5 last:border-0 dark:border-border-dark sm:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] sm:gap-4">
+                  <dt class="font-semibold">Material principal</dt>
+                  <dd class="text-titanium dark:text-titanium-light">Aluminio anodizado en Aura ANC</dd>
+                </div>
+                <div class="grid gap-0.5 border-b border-border-light py-2.5 last:border-0 dark:border-border-dark sm:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] sm:gap-4">
+                  <dt class="font-semibold">Conectividad</dt>
+                  <dd class="text-titanium dark:text-titanium-light">Audio inalámbrico y carga USB-C en Aura ANC</dd>
+                </div>
+                <div class="grid gap-0.5 border-b border-border-light py-2.5 last:border-0 dark:border-border-dark sm:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] sm:gap-4">
+                  <dt class="font-semibold">Enfoque de uso</dt>
+                  <dd class="text-titanium dark:text-titanium-light">Concentración y escucha personal</dd>
+                </div>
+              </dl>
+              <p class="mt-4 mb-2 text-sm font-semibold">Modelos de la serie</p>
+              <ul class="flex flex-wrap gap-1.5 text-sm [&_li]:rounded-sm [&_li]:border [&_li]:border-border-light [&_li]:bg-white [&_li]:px-2 [&_li]:py-0.5 dark:[&_li]:border-border-dark dark:[&_li]:bg-surface-dark"><li>Aura ANC</li><li>Pulse Air</li><li>Mono S1</li></ul>
+            </div>
+          </article>
+          <article class="flex min-w-0 flex-col gap-3 rounded-md border border-border-light bg-ivory p-[clamp(1.1rem,2.6vw,2rem)] dark:border-border-dark dark:bg-graphite">
+            <svg class="shrink-0 text-copper-text dark:text-copper" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true">
+              <rect x="2" y="5" width="20" height="14" rx="2"/>
+              <path d="M6 9h.01M10 9h.01M14 9h.01M18 9h.01M6 12h.01M10 12h.01M14 12h.01M18 12h.01M8 15h8"/>
+            </svg>
+            <div>
+              <h3>Periféricos</h3>
+              <p class="mt-2 text-titanium dark:text-titanium-light">Teclados y ratones para un control preciso durante toda la jornada.</p>
+              <dl class="mt-4 border-t border-border-light text-sm dark:border-border-dark">
+                <div class="grid gap-0.5 border-b border-border-light py-2.5 last:border-0 dark:border-border-dark sm:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] sm:gap-4">
+                  <dt class="font-semibold">Material principal</dt>
+                  <dd class="text-titanium dark:text-titanium-light">Aluminio en Tactile 75</dd>
+                </div>
+                <div class="grid gap-0.5 border-b border-border-light py-2.5 last:border-0 dark:border-border-dark sm:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] sm:gap-4">
+                  <dt class="font-semibold">Conectividad</dt>
+                  <dd class="text-titanium dark:text-titanium-light">USB-C, 2.4G y Bluetooth en Tactile 75</dd>
+                </div>
+                <div class="grid gap-0.5 border-b border-border-light py-2.5 last:border-0 dark:border-border-dark sm:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] sm:gap-4">
+                  <dt class="font-semibold">Enfoque de uso</dt>
+                  <dd class="text-titanium dark:text-titanium-light">Escritura y control diario</dd>
+                </div>
+              </dl>
+              <p class="mt-4 mb-2 text-sm font-semibold">Modelos de la serie</p>
+              <ul class="flex flex-wrap gap-1.5 text-sm [&_li]:rounded-sm [&_li]:border [&_li]:border-border-light [&_li]:bg-white [&_li]:px-2 [&_li]:py-0.5 dark:[&_li]:border-border-dark dark:[&_li]:bg-surface-dark"><li>Tactile 75</li><li>Ergo Pro</li><li>Glide Mini</li></ul>
+            </div>
+          </article>
+          <article class="flex min-w-0 flex-col gap-3 rounded-md border border-border-light bg-ivory p-[clamp(1.1rem,2.6vw,2rem)] dark:border-border-dark dark:bg-graphite">
+            <svg class="shrink-0 text-copper-text dark:text-copper" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true">
+              <rect x="2" y="8" width="20" height="8" rx="2"/>
+              <path d="M6 12h2m3 0h2m3 0h2M12 5v3"/>
+            </svg>
+            <div>
+              <h3>Conectividad</h3>
+              <p class="mt-2 text-titanium dark:text-titanium-light">Hubs, estaciones y carga para integrar tus dispositivos en el escritorio.</p>
+              <dl class="mt-4 border-t border-border-light text-sm dark:border-border-dark">
+                <div class="grid gap-0.5 border-b border-border-light py-2.5 last:border-0 dark:border-border-dark sm:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] sm:gap-4">
+                  <dt class="font-semibold">Material principal</dt>
+                  <dd class="text-titanium dark:text-titanium-light">Aluminio fresado en Link 7-in-1</dd>
+                </div>
+                <div class="grid gap-0.5 border-b border-border-light py-2.5 last:border-0 dark:border-border-dark sm:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] sm:gap-4">
+                  <dt class="font-semibold">Conectividad</dt>
+                  <dd class="text-titanium dark:text-titanium-light">USB-C, video y red según el modelo</dd>
+                </div>
+                <div class="grid gap-0.5 border-b border-border-light py-2.5 last:border-0 dark:border-border-dark sm:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] sm:gap-4">
+                  <dt class="font-semibold">Enfoque de uso</dt>
+                  <dd class="text-titanium dark:text-titanium-light">Escritorios con varios dispositivos</dd>
+                </div>
+              </dl>
+              <p class="mt-4 mb-2 text-sm font-semibold">Modelos de la serie</p>
+              <ul class="flex flex-wrap gap-1.5 text-sm [&_li]:rounded-sm [&_li]:border [&_li]:border-border-light [&_li]:bg-white [&_li]:px-2 [&_li]:py-0.5 dark:[&_li]:border-border-dark dark:[&_li]:bg-surface-dark"><li>Link 7-in-1</li><li>Dock Studio</li><li>Charge Pad</li></ul>
+            </div>
+          </article>
+          <article class="flex min-w-0 flex-col gap-3 rounded-md border border-border-light bg-ivory p-[clamp(1.1rem,2.6vw,2rem)] dark:border-border-dark dark:bg-graphite">
+            <svg class="shrink-0 text-copper-text dark:text-copper" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true">
+              <rect x="3" y="5" width="18" height="12" rx="1"/>
+              <path d="M12 17v4m-4 0h8M6 2h12"/>
+            </svg>
+            <div>
+              <h3>Workspace</h3>
+              <p class="mt-2 text-titanium dark:text-titanium-light">Iluminación, soportes y superficies para ordenar tu espacio de trabajo.</p>
+              <dl class="mt-4 border-t border-border-light text-sm dark:border-border-dark">
+                <div class="grid gap-0.5 border-b border-border-light py-2.5 last:border-0 dark:border-border-dark sm:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] sm:gap-4">
+                  <dt class="font-semibold">Material principal</dt>
+                  <dd class="text-titanium dark:text-titanium-light">Aluminio anodizado en Rise Alloy</dd>
+                </div>
+                <div class="grid gap-0.5 border-b border-border-light py-2.5 last:border-0 dark:border-border-dark sm:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] sm:gap-4">
+                  <dt class="font-semibold">Conectividad</dt>
+                  <dd class="text-titanium dark:text-titanium-light">Alimentación USB-C en Halo Bar</dd>
+                </div>
+                <div class="grid gap-0.5 border-b border-border-light py-2.5 last:border-0 dark:border-border-dark sm:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] sm:gap-4">
+                  <dt class="font-semibold">Enfoque de uso</dt>
+                  <dd class="text-titanium dark:text-titanium-light">Iluminación, altura visual y orden</dd>
+                </div>
+              </dl>
+              <p class="mt-4 mb-2 text-sm font-semibold">Modelos de la serie</p>
+              <ul class="flex flex-wrap gap-1.5 text-sm [&_li]:rounded-sm [&_li]:border [&_li]:border-border-light [&_li]:bg-white [&_li]:px-2 [&_li]:py-0.5 dark:[&_li]:border-border-dark dark:[&_li]:bg-surface-dark"><li>Rise Alloy</li><li>Halo Bar</li><li>Matte XL</li></ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-ivory py-section dark:bg-graphite" id="ecosistema" tabindex="-1" data-focus-destination aria-labelledby="ecosistema-titulo">
+      <div class="mx-auto w-full max-w-[89rem] px-gutter grid items-center gap-[clamp(1.5rem,4.8vw,4rem)] lg:grid-cols-[minmax(0,1.25fr)_minmax(0,1fr)]">
+        <img class="aspect-[3/2] w-full rounded-sm object-contain" src="assets/img/editorial-desk.webp" width="1200" height="800" loading="lazy" decoding="async" alt="Vista cenital de un escritorio con teclado, estación USB-C, ratón y auriculares en tonos grafito">
+        <div>
+          <h2 id="ecosistema-titulo">Ecosistema en armonía</h2>
+          <p class="mt-4 max-w-[34rem] text-titanium dark:text-titanium-light">Audio, periféricos y conectividad comparten materiales y proporciones para integrarse en un mismo espacio de trabajo.</p>
+          <ul class="mt-6 grid gap-3 border-t border-border-light pt-5 dark:border-border-dark">
+            <li class="border-l-2 border-copper-text pl-4 dark:border-copper"><strong class="font-semibold">USB-C unificado</strong><span class="block text-sm text-titanium dark:text-titanium-light">Conexión o carga según el modelo.</span></li>
+            <li class="border-l-2 border-copper-text pl-4 dark:border-copper"><strong class="font-semibold">Acabado mate uniforme</strong><span class="block text-sm text-titanium dark:text-titanium-light">Superficies grafito que comparten una misma estética.</span></li>
+            <li class="border-l-2 border-copper-text pl-4 dark:border-copper"><strong class="font-semibold">Ergonomía de jornada completa</strong><span class="block text-sm text-titanium dark:text-titanium-light">Iluminación y accesorios pensados para trabajar durante horas.</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-graphite py-section text-white dark:bg-surface-dark" data-dark-surface aria-labelledby="principios-titulo">
+      <div class="mx-auto w-full max-w-[89rem] px-gutter">
+        <div class="mb-[clamp(1.75rem,3.3vw,2.75rem)] flex flex-wrap items-baseline justify-between gap-x-8 gap-y-2.5">
+          <h2 id="principios-titulo">Eleva tu forma de trabajar</h2>
+        </div>
+        <div class="grid gap-6 lg:grid-cols-3">
+          <div class="border-t border-border-dark pt-5">
+            <span class="mb-2 block font-display text-[1.65rem] font-semibold text-copper" aria-hidden="true">01</span>
+            <h3>Precisión industrial</h3>
+            <p class="mt-2.5 max-w-[30rem] text-titanium-light">Materiales sólidos como aluminio anodizado y polímeros mate pensados para durar años en tu escritorio.</p>
+          </div>
+          <div class="border-t border-border-dark pt-5">
+            <span class="mb-2 block font-display text-[1.65rem] font-semibold text-copper" aria-hidden="true">02</span>
+            <h3>Ergonomía silenciosa</h3>
+            <p class="mt-2.5 max-w-[30rem] text-titanium-light">Cada curva, tecla e iluminación reduce la fatiga visual y física en jornadas intensivas.</p>
+          </div>
+          <div class="border-t border-border-dark pt-5">
+            <span class="mb-2 block font-display text-[1.65rem] font-semibold text-copper" aria-hidden="true">03</span>
+            <h3>Ecosistema coherente</h3>
+            <p class="mt-2.5 max-w-[30rem] text-titanium-light">Conectividad USB-C unificada y estética uniforme para que todo tu espacio funcione como una sola pieza.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-ivory py-section dark:bg-graphite" id="marca" tabindex="-1" data-focus-destination aria-labelledby="marca-titulo">
+      <div class="mx-auto w-full max-w-[89rem] px-gutter grid items-center gap-[clamp(1.5rem,5.5vw,5rem)] md:grid-cols-2">
+        <img class="aspect-[4/3] w-full rounded-sm object-contain" src="assets/img/editorial-craft.webp" width="1200" height="900" loading="lazy" decoding="async" alt="Detalle de unos auriculares y un teclado frente a un monitor con barra de luz cálida">
+        <div>
+          <h2 id="marca-titulo">Diseño que desaparece para que tu trabajo destaque.</h2>
+          <p class="mt-5 max-w-[35rem] text-titanium dark:text-titanium-light">VÉRTICE Technology nace con una premisa directa: eliminar el exceso visual de los accesorios tecnológicos convencionales. Sin luces innecesarias ni plásticos frágiles. Diseñamos audio, periféricos, conectividad y piezas de escritorio con foco absoluto en el rendimiento diario de programadores, diseñadores y profesionales.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white py-section dark:bg-surface-dark" id="contacto" tabindex="-1" data-focus-destination aria-labelledby="contacto-titulo">
+      <div class="mx-auto w-full max-w-[54rem] px-gutter">
+        <h2 id="contacto-titulo">Solicitar cotización</h2>
+        <p id="cotizacion-aviso" class="mt-3 mb-6 text-titanium dark:text-titanium-light">Formulario demostrativo. Usa datos de ejemplo. El sitio no envía ni guarda los valores que escribas.</p>
+        <noscript><p>Activa JavaScript para probar la validación demostrativa del formulario.</p></noscript>
+        <form aria-describedby="cotizacion-aviso" autocomplete="off" data-demo-form>
+          <fieldset class="grid min-w-0 gap-4 sm:grid-cols-2" disabled aria-label="Datos de ejemplo">
+            <div>
+              <label class="mb-1.5 block text-sm font-semibold" for="nombre">Nombre completo</label>
+              <input class="form-input block min-h-12 min-w-0 w-full rounded-sm border border-titanium bg-white px-3 py-2 text-base text-graphite focus:border-copper-text focus:ring-0 aria-invalid:border-error dark:border-titanium-light dark:bg-graphite dark:text-white dark:focus:border-copper dark:aria-invalid:border-error-dark" id="nombre" type="text" required maxlength="100" pattern=".*\S.*" aria-describedby="nombre-error">
+              <p class="mt-1.5 text-sm font-semibold text-error dark:text-error-dark" id="nombre-error" hidden></p>
+            </div>
+            <div>
+              <label class="mb-1.5 block text-sm font-semibold" for="correo">Correo electrónico</label>
+              <input class="form-input block min-h-12 min-w-0 w-full rounded-sm border border-titanium bg-white px-3 py-2 text-base text-graphite focus:border-copper-text focus:ring-0 aria-invalid:border-error dark:border-titanium-light dark:bg-graphite dark:text-white dark:focus:border-copper dark:aria-invalid:border-error-dark" id="correo" type="email" required maxlength="150" aria-describedby="correo-error">
+              <p class="mt-1.5 text-sm font-semibold text-error dark:text-error-dark" id="correo-error" hidden></p>
+            </div>
+            <div class="sm:col-span-2">
+              <label class="mb-1.5 block text-sm font-semibold" for="categoria">Categoría de interés</label>
+              <div class="relative">
+                <select class="form-select block min-h-12 min-w-0 w-full rounded-sm border border-titanium bg-white px-3 py-2 text-base text-graphite focus:border-copper-text focus:ring-0 aria-invalid:border-error dark:border-titanium-light dark:bg-graphite dark:text-white dark:focus:border-copper dark:aria-invalid:border-error-dark bg-none pr-10" id="categoria" required aria-describedby="categoria-error">
+                  <option value="" disabled selected>Selecciona una categoría</option>
+                  <option>Audio</option>
+                  <option>Periféricos</option>
+                  <option>Conectividad</option>
+                  <option>Workspace</option>
+                </select>
+                <svg class="pointer-events-none absolute top-1/2 right-3 size-4 -translate-y-1/2 text-titanium dark:text-titanium-light" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+                  <path d="m3 6 5 5 5-5"/>
+                </svg>
+              </div>
+              <p class="mt-1.5 text-sm font-semibold text-error dark:text-error-dark" id="categoria-error" hidden></p>
+            </div>
+            <div class="sm:col-span-2">
+              <label class="mb-1.5 block text-sm font-semibold" for="mensaje">Mensaje</label>
+              <textarea class="form-textarea block min-w-0 w-full rounded-sm border border-titanium bg-white px-3 py-2 text-base text-graphite focus:border-copper-text focus:ring-0 aria-invalid:border-error dark:border-titanium-light dark:bg-graphite dark:text-white dark:focus:border-copper dark:aria-invalid:border-error-dark min-h-28 resize-y wrap-anywhere" id="mensaje" rows="4" required maxlength="800" aria-describedby="mensaje-error"></textarea>
+              <p class="mt-1.5 text-sm font-semibold text-error dark:text-error-dark" id="mensaje-error" hidden></p>
+            </div>
+            <button class="inline-flex min-h-12 cursor-pointer items-center justify-center rounded-sm bg-copper px-5 py-2.5 text-center text-[0.9375rem] leading-tight font-semibold text-graphite hover:bg-copper-hover justify-self-start disabled:cursor-not-allowed" type="submit">Probar cotización</button>
+          </fieldset>
+          <p class="mt-3 font-semibold text-error empty:mt-0 dark:text-error-dark" role="alert"></p>
+          <p class="mt-3 font-semibold text-success empty:mt-0 dark:text-success-dark" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-graphite pt-10 pb-7 text-white" data-dark-surface>
+    <div class="mx-auto w-full max-w-[89rem] px-gutter">
+      <div class="flex flex-wrap items-start justify-between gap-x-8 gap-y-4">
+        <div>
+          <a class="inline-flex min-h-11 shrink-0 items-center gap-2.5 text-white" href="#inicio" aria-label="VÉRTICE Technology, volver al inicio">
+            <svg class="shrink-0 text-copper" width="34" height="34" viewBox="0 0 36 36" aria-hidden="true">
+              <path fill="currentColor" d="M2 6h8l8 18L26 6h8L18 34z"/>
+              <path fill="currentColor" d="M15 6h6l-3 7z"/>
+            </svg>
+            <span class="flex flex-col font-display text-[1.35rem] leading-none font-bold tracking-[0.06em]">VÉRTICE <span class="mt-1 font-sans text-[0.625rem] font-semibold tracking-[0.21em] text-titanium-light">TECHNOLOGY</span></span>
+          </a>
+          <p class="mt-2 text-[0.9375rem] text-titanium-light">Más allá de lo esencial.</p>
+        </div>
+        <nav class="flex flex-wrap gap-x-5 gap-y-1 text-sm text-titanium-light [&_a]:inline-flex [&_a]:min-h-11 [&_a]:items-center [&_a:hover]:text-white [&_a:hover]:underline" aria-label="Navegación del pie">
+          <a href="#catalogo">Catálogo</a>
+          <a href="#colecciones">Colecciones</a>
+          <a href="#ecosistema">Ecosistema</a>
+          <a href="#marca">Marca</a>
+          <a href="#contacto">Contacto</a>
+        </nav>
+      </div>
+      <p class="mt-6 border-t border-border-dark pt-5 text-sm text-titanium-light">Proyecto demostrativo de marca ficticia. Los productos, especificaciones y precios en soles (S/) tienen fines exclusivos de exhibición de portafolio. Las imágenes son ilustraciones conceptuales. El formulario no envía ni almacena datos.</p>
+    </div>
+  </footer>
+
+  <dialog class="fixed inset-y-0 right-0 left-auto m-0 h-dvh max-h-dvh w-full max-w-[34rem] overflow-y-auto bg-white text-graphite backdrop:bg-graphite/75 dark:bg-surface-dark dark:text-white" id="carrito-panel" aria-labelledby="carrito-titulo" aria-modal="true">
+    <div class="flex h-full min-h-0 flex-col wrap-anywhere">
+      <header class="flex shrink-0 flex-wrap items-start justify-between gap-3 border-b border-border-light px-4 py-4 sm:px-6 dark:border-border-dark">
+        <div>
+          <h2 class="text-3xl" id="carrito-titulo">Tu pedido</h2>
+          <p class="mt-1 text-sm text-titanium dark:text-titanium-light" role="status" data-drawer-count></p>
+        </div>
+        <button class="cursor-pointer rounded-sm border border-titanium bg-white text-graphite hover:border-graphite dark:border-titanium-light dark:bg-graphite dark:text-white dark:hover:border-white inline-flex min-h-11 min-w-11 items-center justify-center px-2 text-sm font-semibold disabled:cursor-not-allowed disabled:border-dashed" type="button" data-cart-close autofocus>Cerrar</button>
+      </header>
+      <div class="min-h-20 flex-1 overflow-y-auto overscroll-contain px-4 py-4 sm:px-6">
+        <p class="mb-4 text-sm text-titanium dark:text-titanium-light" data-storage-note hidden>El almacenamiento no está disponible. La selección se conserva en esta página mientras esté abierta.</p>
+        <p class="text-titanium dark:text-titanium-light" data-cart-empty>Tu carrito está vacío. Explora el catálogo para añadir productos.</p>
+        <ul class="space-y-4" aria-label="Productos del carrito" data-cart-items></ul>
+      </div>
+      <footer class="max-h-[45dvh] shrink-0 overflow-y-auto overscroll-contain border-t border-border-light bg-ivory px-4 py-4 sm:px-6 dark:border-border-dark dark:bg-graphite">
+        <div class="flex flex-wrap items-baseline justify-between gap-2">
+          <p class="font-semibold">Total del pedido</p>
+          <p class="font-display text-2xl font-bold tabular-nums" data-cart-total>S/ 0.00</p>
+        </div>
+        <div class="mt-3 space-y-3" data-order-controls hidden>
+          <details data-order-details>
+            <summary class="min-h-11 cursor-pointer py-2 text-sm font-semibold">Ver resumen del pedido</summary>
+            <textarea class="form-textarea w-full resize-y rounded-sm border border-titanium bg-white p-2 text-sm dark:border-titanium-light dark:bg-surface-dark" rows="4" readonly aria-label="Resumen del pedido" data-order-summary></textarea>
+          </details>
+          <div class="flex flex-wrap gap-2">
+            <button class="min-h-11 cursor-pointer rounded-sm bg-copper px-3 py-2 text-sm font-semibold text-graphite hover:bg-copper-hover" type="button" data-copy-order>Copiar resumen</button>
+            <button class="cursor-pointer rounded-sm border border-titanium bg-white text-graphite hover:border-graphite dark:border-titanium-light dark:bg-graphite dark:text-white dark:hover:border-white inline-flex min-h-11 min-w-11 items-center justify-center px-2 text-sm font-semibold disabled:cursor-not-allowed disabled:border-dashed" type="button" data-clear-cart>Vaciar carrito</button>
+          </div>
+          <p class="text-sm text-titanium dark:text-titanium-light" role="status" data-copy-status></p>
+        </div>
+        <button class="mt-3 min-h-11 w-full cursor-not-allowed rounded-sm border border-dashed border-titanium px-2 py-1.5 text-sm text-titanium dark:border-titanium-light dark:text-titanium-light" type="button" disabled aria-describedby="whatsapp-aviso">Enviar por WhatsApp (Demostrativo)</button>
+        <p class="mt-2 text-sm text-titanium dark:text-titanium-light" id="whatsapp-aviso">WhatsApp está desactivado. La demostración no transmite pedidos.</p>
+      </footer>
+    </div>
+  </dialog>
+
+  <template id="cart-row-template">
+    <li class="rounded-lg border border-border-light p-3 dark:border-border-dark">
+      <div class="grid grid-cols-[minmax(0,auto)_minmax(0,1fr)] items-start gap-3">
+        <img class="aspect-square w-[min(4rem,20vw)] rounded-sm object-contain" width="64" height="64" alt="" data-row-image>
+        <div>
+          <p class="font-display font-bold" data-row-name></p>
+          <p class="text-sm text-titanium dark:text-titanium-light" data-row-unit></p>
+        </div>
+      </div>
+      <div class="mt-3 flex flex-wrap items-center justify-between gap-2">
+        <div class="flex flex-wrap items-center gap-2">
+          <button class="cursor-pointer rounded-sm border border-titanium bg-white text-graphite hover:border-graphite dark:border-titanium-light dark:bg-graphite dark:text-white dark:hover:border-white inline-flex min-h-11 min-w-11 items-center justify-center px-2 text-sm font-semibold disabled:cursor-not-allowed disabled:border-dashed" data-action="decrease" type="button">−</button>
+          <span class="min-w-5 text-center text-sm font-semibold tabular-nums" data-row-quantity></span>
+          <button class="cursor-pointer rounded-sm border border-titanium bg-white text-graphite hover:border-graphite dark:border-titanium-light dark:bg-graphite dark:text-white dark:hover:border-white inline-flex min-h-11 min-w-11 items-center justify-center px-2 text-sm font-semibold disabled:cursor-not-allowed disabled:border-dashed" data-action="increase" type="button">+</button>
+        </div>
+        <p class="font-semibold tabular-nums" data-row-subtotal></p>
+        <button class="min-h-11 cursor-pointer rounded-sm px-2 text-sm font-semibold text-copper-text underline underline-offset-4 dark:text-copper" data-action="remove" type="button">Eliminar</button>
+      </div>
+    </li>
+  </template>
+
+  <p class="pointer-events-none fixed right-4 bottom-4 left-4 z-30 ml-auto max-w-sm rounded-sm border border-titanium-light bg-graphite px-4 py-3 text-sm font-semibold text-white" data-cart-feedback hidden></p>
+</body>
+</html>
