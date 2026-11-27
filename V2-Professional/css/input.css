@@ -43,6 +43,10 @@
 }
 
 @layer base {
+  html {
+    scroll-padding-top: max(6rem, calc(var(--header-height, 0px) + 0.5rem));
+  }
+
   h1, h2, h3 {
     @apply font-display font-bold tracking-[-0.045em];
   }
@@ -62,4 +66,23 @@
   [data-dark-surface] :focus-visible {
     @apply outline-copper;
   }
+
+  [data-focus-destination]:focus-visible {
+    @apply outline-none;
+  }
+
+  main[data-focus-destination]:focus-visible h1,
+  section[data-focus-destination]:focus-visible h2 {
+    @apply underline decoration-copper-text dark:decoration-copper;
+    text-decoration-thickness: 0.08em;
+    text-underline-offset: 0.13em;
+  }
+
+  main[data-focus-destination]:focus-visible h1 {
+    @apply decoration-copper;
+  }
+}
+
+[data-demo-form] :is(input, select, textarea, button):disabled {
+  @apply cursor-not-allowed border-dashed border-titanium bg-ivory text-titanium dark:border-titanium-light dark:bg-surface-dark dark:text-titanium-light;
 }

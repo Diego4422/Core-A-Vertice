@@ -38,6 +38,14 @@
         },
         {
           "columnas": 4,
+          "documento": 1265,
+          "fuente": "16px",
+          "fuera": [],
+          "viewport": 1280,
+          "visible": 1265
+        },
+        {
+          "columnas": 4,
           "documento": 1425,
           "fuente": "16px",
           "fuera": [],
@@ -45,14 +53,164 @@
           "visible": 1425
         }
       ],
-      "texto_200": {
-        "columnas": 1,
-        "documento": 320,
-        "fuente": "32px",
-        "fuera": [],
-        "viewport": 320,
-        "visible": 320
-      },
+      "texto_200": [
+        {
+          "porcentaje": 150,
+          "columnas": 1,
+          "documento": 320,
+          "fuente": "24px",
+          "fuera": [],
+          "viewport": 320,
+          "visible": 320,
+          "navegacion": {
+            "cabecera": 157,
+            "contorno": "none",
+            "destino": 168.890625,
+            "foco": "colecciones",
+            "indicador": "underline",
+            "titulo": 252.890625
+          }
+        },
+        {
+          "porcentaje": 200,
+          "columnas": 1,
+          "documento": 320,
+          "fuente": "32px",
+          "fuera": [],
+          "viewport": 320,
+          "visible": 320,
+          "navegacion": {
+            "cabecera": 209,
+            "contorno": "none",
+            "destino": 224.625,
+            "foco": "colecciones",
+            "indicador": "underline",
+            "titulo": 336.625
+          }
+        },
+        {
+          "porcentaje": 150,
+          "columnas": 1,
+          "documento": 375,
+          "fuente": "24px",
+          "fuera": [],
+          "viewport": 375,
+          "visible": 375
+        },
+        {
+          "porcentaje": 200,
+          "columnas": 1,
+          "documento": 375,
+          "fuente": "32px",
+          "fuera": [],
+          "viewport": 375,
+          "visible": 375
+        },
+        {
+          "porcentaje": 150,
+          "columnas": 2,
+          "documento": 753,
+          "fuente": "24px",
+          "fuera": [],
+          "viewport": 768,
+          "visible": 753
+        },
+        {
+          "porcentaje": 200,
+          "columnas": 2,
+          "documento": 753,
+          "fuente": "32px",
+          "fuera": [],
+          "viewport": 768,
+          "visible": 753
+        },
+        {
+          "porcentaje": 150,
+          "columnas": 4,
+          "documento": 1009,
+          "fuente": "24px",
+          "fuera": [],
+          "viewport": 1024,
+          "visible": 1009,
+          "navegacion": {
+            "cabecera": 169,
+            "contorno": "none",
+            "destino": 180.890625,
+            "foco": "colecciones",
+            "indicador": "underline",
+            "titulo": 264.890625
+          }
+        },
+        {
+          "porcentaje": 200,
+          "columnas": 4,
+          "documento": 1009,
+          "fuente": "32px",
+          "fuera": [],
+          "viewport": 1024,
+          "visible": 1009,
+          "navegacion": {
+            "cabecera": 321,
+            "contorno": "none",
+            "destino": 337.140625,
+            "foco": "colecciones",
+            "indicador": "underline",
+            "titulo": 449.140625
+          }
+        },
+        {
+          "porcentaje": 150,
+          "columnas": 4,
+          "documento": 1265,
+          "fuente": "24px",
+          "fuera": [],
+          "viewport": 1280,
+          "visible": 1265,
+          "navegacion": {
+            "cabecera": 169,
+            "contorno": "none",
+            "destino": 181.3125,
+            "foco": "colecciones",
+            "indicador": "underline",
+            "titulo": 265.3125
+          }
+        },
+        {
+          "porcentaje": 200,
+          "columnas": 4,
+          "documento": 1265,
+          "fuente": "32px",
+          "fuera": [],
+          "viewport": 1280,
+          "visible": 1265,
+          "navegacion": {
+            "cabecera": 225,
+            "contorno": "none",
+            "destino": 240.625,
+            "foco": "colecciones",
+            "indicador": "underline",
+            "titulo": 352.625
+          }
+        },
+        {
+          "porcentaje": 150,
+          "columnas": 4,
+          "documento": 1425,
+          "fuente": "24px",
+          "fuera": [],
+          "viewport": 1440,
+          "visible": 1425
+        },
+        {
+          "porcentaje": 200,
+          "columnas": 4,
+          "documento": 1425,
+          "fuente": "32px",
+          "fuera": [],
+          "viewport": 1440,
+          "visible": 1425
+        }
+      ],
       "capturas": [
         {
           "archivo": "claro-375.png",
@@ -62,11 +220,33 @@
         {
           "archivo": "claro-1440.png",
           "ancho": 1440,
-          "alto": 5301
+          "alto": 5327
+        }
+      ],
+      "ancho_y_dimensiones_formulario": [
+        {
+          "viewport": 375,
+          "cta": "48px",
+          "doc": 375,
+          "left": 0,
+          "max": "864px",
+          "textarea": "112px",
+          "width": 375
+        },
+        {
+          "viewport": 1440,
+          "cta": "48px",
+          "doc": 1425,
+          "left": 280.5,
+          "max": "864px",
+          "textarea": "112px",
+          "width": 864
         }
       ],
       "tema": {
         "sistema": true,
+        "cambio_del_sistema": true,
+        "modo_manual_prevalece": true,
         "teclado": true,
         "aria_pressed": true,
         "recarga_recupera_sistema": true,
@@ -120,10 +300,7 @@
         "borde de campo": 5.77,
         "borde exterior": 5.77,
         "texto de campo": 18.62,
-        "confirmación": 5.32,
-        "hover de botón primario": 5.04,
-        "hover de enlace de navegación": 18.62,
-        "hover de borde del selector": 7.62
+        "confirmación": 5.32
       },
       "imagenes_y_fuentes": {
         "fonts": [
@@ -214,6 +391,14 @@
         },
         {
           "columnas": 4,
+          "documento": 1265,
+          "fuente": "16px",
+          "fuera": [],
+          "viewport": 1280,
+          "visible": 1265
+        },
+        {
+          "columnas": 4,
           "documento": 1425,
           "fuente": "16px",
           "fuera": [],
@@ -221,14 +406,164 @@
           "visible": 1425
         }
       ],
-      "texto_200": {
-        "columnas": 1,
-        "documento": 320,
-        "fuente": "32px",
-        "fuera": [],
-        "viewport": 320,
-        "visible": 320
-      },
+      "texto_200": [
+        {
+          "porcentaje": 150,
+          "columnas": 1,
+          "documento": 320,
+          "fuente": "24px",
+          "fuera": [],
+          "viewport": 320,
+          "visible": 320,
+          "navegacion": {
+            "cabecera": 157,
+            "contorno": "none",
+            "destino": 168.890625,
+            "foco": "colecciones",
+            "indicador": "underline",
+            "titulo": 252.890625
+          }
+        },
+        {
+          "porcentaje": 200,
+          "columnas": 1,
+          "documento": 320,
+          "fuente": "32px",
+          "fuera": [],
+          "viewport": 320,
+          "visible": 320,
+          "navegacion": {
+            "cabecera": 209,
+            "contorno": "none",
+            "destino": 224.625,
+            "foco": "colecciones",
+            "indicador": "underline",
+            "titulo": 336.625
+          }
+        },
+        {
+          "porcentaje": 150,
+          "columnas": 1,
+          "documento": 375,
+          "fuente": "24px",
+          "fuera": [],
+          "viewport": 375,
+          "visible": 375
+        },
+        {
+          "porcentaje": 200,
+          "columnas": 1,
+          "documento": 375,
+          "fuente": "32px",
+          "fuera": [],
+          "viewport": 375,
+          "visible": 375
+        },
+        {
+          "porcentaje": 150,
+          "columnas": 2,
+          "documento": 753,
+          "fuente": "24px",
+          "fuera": [],
+          "viewport": 768,
+          "visible": 753
+        },
+        {
+          "porcentaje": 200,
+          "columnas": 2,
+          "documento": 753,
+          "fuente": "32px",
+          "fuera": [],
+          "viewport": 768,
+          "visible": 753
+        },
+        {
+          "porcentaje": 150,
+          "columnas": 4,
+          "documento": 1009,
+          "fuente": "24px",
+          "fuera": [],
+          "viewport": 1024,
+          "visible": 1009,
+          "navegacion": {
+            "cabecera": 169,
+            "contorno": "none",
+            "destino": 180.890625,
+            "foco": "colecciones",
+            "indicador": "underline",
+            "titulo": 264.890625
+          }
+        },
+        {
+          "porcentaje": 200,
+          "columnas": 4,
+          "documento": 1009,
+          "fuente": "32px",
+          "fuera": [],
+          "viewport": 1024,
+          "visible": 1009,
+          "navegacion": {
+            "cabecera": 321,
+            "contorno": "none",
+            "destino": 337.140625,
+            "foco": "colecciones",
+            "indicador": "underline",
+            "titulo": 449.140625
+          }
+        },
+        {
+          "porcentaje": 150,
+          "columnas": 4,
+          "documento": 1265,
+          "fuente": "24px",
+          "fuera": [],
+          "viewport": 1280,
+          "visible": 1265,
+          "navegacion": {
+            "cabecera": 169,
+            "contorno": "none",
+            "destino": 181.3125,
+            "foco": "colecciones",
+            "indicador": "underline",
+            "titulo": 265.3125
+          }
+        },
+        {
+          "porcentaje": 200,
+          "columnas": 4,
+          "documento": 1265,
+          "fuente": "32px",
+          "fuera": [],
+          "viewport": 1280,
+          "visible": 1265,
+          "navegacion": {
+            "cabecera": 225,
+            "contorno": "none",
+            "destino": 240.625,
+            "foco": "colecciones",
+            "indicador": "underline",
+            "titulo": 352.625
+          }
+        },
+        {
+          "porcentaje": 150,
+          "columnas": 4,
+          "documento": 1425,
+          "fuente": "24px",
+          "fuera": [],
+          "viewport": 1440,
+          "visible": 1425
+        },
+        {
+          "porcentaje": 200,
+          "columnas": 4,
+          "documento": 1425,
+          "fuente": "32px",
+          "fuera": [],
+          "viewport": 1440,
+          "visible": 1425
+        }
+      ],
       "capturas": [
         {
           "archivo": "oscuro-375.png",
@@ -238,11 +573,33 @@
         {
           "archivo": "oscuro-1440.png",
           "ancho": 1440,
-          "alto": 5301
+          "alto": 5327
+        }
+      ],
+      "ancho_y_dimensiones_formulario": [
+        {
+          "viewport": 375,
+          "cta": "48px",
+          "doc": 375,
+          "left": 0,
+          "max": "864px",
+          "textarea": "112px",
+          "width": 375
+        },
+        {
+          "viewport": 1440,
+          "cta": "48px",
+          "doc": 1425,
+          "left": 280.5,
+          "max": "864px",
+          "textarea": "112px",
+          "width": 864
         }
       ],
       "tema": {
         "sistema": true,
+        "cambio_del_sistema": true,
+        "modo_manual_prevalece": true,
         "teclado": true,
         "aria_pressed": true,
         "recarga_recupera_sistema": true,
@@ -296,10 +653,7 @@
         "borde de campo": 7.62,
         "borde exterior": 6.92,
         "texto de campo": 18.62,
-        "confirmación": 9.71,
-        "hover de botón primario": 5.04,
-        "hover de enlace de navegación": 18.62,
-        "hover de borde del selector": 7.62
+        "confirmación": 9.71
       },
       "imagenes_y_fuentes": {
         "fonts": [
@@ -417,7 +771,55 @@
   "js_externo_bloqueado": {
     "formulario_deshabilitado": true,
     "enlaces_visibles": true,
-    "selector_oculto": true
+    "selector_oculto": true,
+    "apariencia": [
+      [
+        "INPUT",
+        "dashed",
+        "not-allowed"
+      ],
+      [
+        "INPUT",
+        "dashed",
+        "not-allowed"
+      ],
+      [
+        "SELECT",
+        "dashed",
+        "not-allowed"
+      ],
+      [
+        "TEXTAREA",
+        "dashed",
+        "not-allowed"
+      ],
+      [
+        "BUTTON",
+        "dashed",
+        "not-allowed"
+      ]
+    ],
+    "contrastes_oscuro": {
+      "texto desactivado": 6.92,
+      "borde desactivado": 6.92
+    }
+  },
+  "ambito_iife": {
+    "nombres_globales_preexistentes": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "inicializacion_correcta": true
+  },
+  "archivo_local": {
+    "controles_operativos": true,
+    "avisos_fuentes": 3,
+    "tipos_de_avisos": [
+      "CORS al precargar WOFF2",
+      "Precarga WOFF2 no utilizada o bloqueada"
+    ]
   },
   "sin_js": {
     "claro": true,
@@ -425,7 +827,36 @@
     "disabled": true,
     "menu": true,
     "tema": true,
-    "ancho": 320
+    "ancho": 320,
+    "controles": [
+      [
+        "INPUT",
+        "dashed",
+        "not-allowed"
+      ],
+      [
+        "INPUT",
+        "dashed",
+        "not-allowed"
+      ],
+      [
+        "SELECT",
+        "dashed",
+        "not-allowed"
+      ],
+      [
+        "TEXTAREA",
+        "dashed",
+        "not-allowed"
+      ],
+      [
+        "BUTTON",
+        "dashed",
+        "not-allowed"
+      ]
+    ],
+    "aviso_visible": true,
+    "contraste_de_texto": 5.24
   },
   "recursos_imagen_sha256": {
     "editorial-craft.webp": "ec7cc3588a877ef285406041d94908c6f00f7ea6b78e43b11b88e4d2d535f4b5",
@@ -437,5 +868,127 @@
     "prod-dock-studio.webp": "04d8acf7302a4c1ca6b99bd687e4be47c3ce5e4b3cdade95b5cf5e9079e5b9d0",
     "prod-halo-bar.webp": "f95ec318c3e2b38ead6b804eab84544d4f3158c4c0ff2732e74d75d4c0f8c798",
     "prod-tactile-75.webp": "24d04c9a93798a6c438582d0d026b7da3b440f84ca66997ea3efd7f31a16ebd7"
+  },
+  "base_zoom": [
+    {
+      "viewport": 320,
+      "texto": 100,
+      "client": 320,
+      "header": 105,
+      "nav": 0,
+      "offset": 96,
+      "page": 320,
+      "theme": 20
+    },
+    {
+      "viewport": 320,
+      "texto": 150,
+      "client": 320,
+      "header": 157,
+      "nav": 0,
+      "offset": 144,
+      "page": 320,
+      "theme": 30
+    },
+    {
+      "viewport": 320,
+      "texto": 200,
+      "client": 320,
+      "header": 209,
+      "nav": 0,
+      "offset": 192,
+      "page": 320,
+      "theme": 40
+    },
+    {
+      "viewport": 1024,
+      "texto": 100,
+      "client": 1009,
+      "header": 73,
+      "nav": 429.5625,
+      "offset": 96,
+      "page": 1009,
+      "theme": 197.1875
+    },
+    {
+      "viewport": 1024,
+      "texto": 150,
+      "client": 1009,
+      "header": 109,
+      "nav": 338.203125,
+      "offset": 144,
+      "page": 1134,
+      "theme": 254.203125
+    },
+    {
+      "viewport": 1024,
+      "texto": 200,
+      "client": 1009,
+      "header": 145,
+      "nav": 423.21875,
+      "offset": 192,
+      "page": 1484,
+      "theme": 311.21875
+    },
+    {
+      "viewport": 1280,
+      "texto": 100,
+      "client": 1265,
+      "header": 73,
+      "nav": 633.265625,
+      "offset": 96,
+      "page": 1265,
+      "theme": 209.484375
+    },
+    {
+      "viewport": 1280,
+      "texto": 150,
+      "client": 1265,
+      "header": 109,
+      "nav": 350.5,
+      "offset": 144,
+      "page": 1265,
+      "theme": 266.5
+    },
+    {
+      "viewport": 1280,
+      "texto": 200,
+      "client": 1265,
+      "header": 145,
+      "nav": 435.515625,
+      "offset": 192,
+      "page": 1576,
+      "theme": 323.515625
+    },
+    {
+      "viewport": 1440,
+      "texto": 100,
+      "client": 1425,
+      "header": 73,
+      "nav": 785.09375,
+      "offset": 96,
+      "page": 1425,
+      "theme": 217.65625
+    },
+    {
+      "viewport": 1440,
+      "texto": 200,
+      "client": 1425,
+      "header": 145,
+      "nav": 443.1875,
+      "offset": 192,
+      "page": 1584,
+      "theme": 331.1875
+    }
+  ],
+  "comparacion_visual": {
+    "commit_base": "da97d687352446cbe2c02596ff79e1ad7b4393df",
+    "franja_superior_px": 675,
+    "pixeles_distintos": {
+      "claro-375.png": 0,
+      "claro-1440.png": 0,
+      "oscuro-375.png": 0,
+      "oscuro-1440.png": 0
+    }
   }
 }

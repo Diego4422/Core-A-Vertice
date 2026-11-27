@@ -4,7 +4,7 @@
     "ancho": 375,
     "estado": "menú abierto",
     "infracciones": [],
-    "pasadas": 30,
+    "pasadas": 31,
     "revision_manual": [],
     "version": "4.14.0"
   },
@@ -13,7 +13,7 @@
     "ancho": 1440,
     "estado": "formulario inválido",
     "infracciones": [],
-    "pasadas": 30,
+    "pasadas": 31,
     "revision_manual": [],
     "version": "4.14.0"
   },
@@ -22,7 +22,7 @@
     "ancho": 375,
     "estado": "menú abierto",
     "infracciones": [],
-    "pasadas": 30,
+    "pasadas": 31,
     "revision_manual": [],
     "version": "4.14.0"
   },
@@ -31,7 +31,7 @@
     "ancho": 1440,
     "estado": "formulario inválido",
     "infracciones": [],
-    "pasadas": 30,
+    "pasadas": 31,
     "revision_manual": [],
     "version": "4.14.0"
   }
